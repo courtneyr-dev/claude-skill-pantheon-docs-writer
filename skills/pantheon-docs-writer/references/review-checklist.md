@@ -52,3 +52,21 @@ Before delivering or committing any doc:
 - [ ] Blank line at end of file
 - [ ] Blank lines between YAML frontmatter and content, and between headings and content
 - [ ] Redirect table in PR if moving or removing any URLs
+
+**Voice and claims** (see `voice-rules.md` and `inputs-claims-and-sources.md`)
+- [ ] Searched the draft for be verbs (is, are, was, were, be, been, being) and fixed each one that hides an actor
+- [ ] No hyperbole, opinion, intensifiers, or colloquialisms
+- [ ] No rewrite added a claim the source doesn't support
+- [ ] Every sentence about product behavior has a source, or sits in the open questions list
+- [ ] The prerequisites heading is "Before you begin"
+- [ ] Sample values use the style guide's placeholders (`placeholders-and-embeds.md`)
+
+**Search findability, proposed** (see `seo-for-authors.md`; guidance, not a requirement)
+- [ ] Opening paragraph states the outcome or answers the question
+- [ ] Title and description make sense outside the site navigation
+- [ ] Page links to its parent, related pages, and the next step
+- [ ] Errors appear verbatim as H3s in a Troubleshooting section
+
+**Automated checks**
+- [ ] Ran `vale` on the file and fixed errors and warnings (`vale-and-checks.md`)
+

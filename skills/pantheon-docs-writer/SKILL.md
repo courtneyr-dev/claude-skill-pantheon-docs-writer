@@ -30,7 +30,7 @@ description: "Write, edit, or review Pantheon documentation. Applies Pantheon st
 
 ---
 
-## Step 1: Classify with Diátaxis
+## Classify with Diátaxis
 
 Before writing a single word, classify the content. All Pantheon docs fall into one of four quadrants:
 
@@ -57,21 +57,25 @@ Work through these in order. Load a reference file only when its step applies; d
 
 | # | Step | What you do | Load |
 |---|---|---|---|
-| 1 | Classify | Pick the Diátaxis quadrant (above). | none |
-| 2 | Content type and location | `doc` or `guide`; where the file goes; frontmatter. Release notes use a different schema. | `references/content-types-and-frontmatter.md`, `references/release-notes.md` |
-| 3 | Structure | Intro, Before you begin, sections, Troubleshooting, More resources. | `references/document-structure.md` |
-| 4 | Write | Voice, headings, emphasis, code, links, lists, tables, images, where the user is. | `references/writing-style.md` |
-| 5 | Components | Callouts, accordions, tabs, partials, popovers, variables. | `references/components-and-variables.md` |
-| 6 | Inclusive language | Apply on every page. | `references/inclusive-language.md` |
-| 7 | Check | Run the checklist before delivering. | `references/review-checklist.md` |
-| 8 | Ship | Navigation, redirects, branch, commit, PR. | `references/navigation-and-redirects.md`, `references/repo-workflow-and-terminology.md` |
+| 1 | Inputs and claims | Get the reader, goal, starting point, prerequisites, and a source for each product claim. Mark what you can't source as an open question. | `references/inputs-claims-and-sources.md` |
+| 2 | Classify | Pick the Diátaxis quadrant (section above). | none |
+| 3 | Content type and location | `doc` or `guide`; where the file goes; frontmatter. Release notes use a different schema. In a Google Doc published through Content Publisher, use Docs mode instead. | `references/content-types-and-frontmatter.md`, `references/release-notes.md`, `references/docs-mode.md` |
+| 4 | Structure | Intro, Before you begin, sections, Troubleshooting, More resources. | `references/document-structure.md` |
+| 5 | Write | Voice (be verbs, hyperbole), headings, emphasis, code, links, lists, tables, images, where the user is. | `references/voice-rules.md`, `references/writing-style.md` |
+| 6 | Components and embeds | Callouts, accordions, tabs, partials, popovers, variables, videos, icons, placeholders, review dates. | `references/components-and-variables.md`, `references/placeholders-and-embeds.md` |
+| 7 | Inclusive language | Apply on every page. | `references/inclusive-language.md` |
+| 8 | Findability (proposed) | Search intent, title, description, links. Guidance, not an adopted standard. | `references/seo-for-authors.md` |
+| 9 | Check | Run `vale`, then the checklist. Vale can't see most voice and claim problems. | `references/vale-and-checks.md`, `references/review-checklist.md` |
+| 10 | Ship | Navigation, redirects, branch, commit, PR. | `references/navigation-and-redirects.md`, `references/repo-workflow-and-terminology.md` |
 
 ## Rules that apply to every page
 
 These are the short form. The detail and examples are in the reference files.
 
 - Sentence case for all headings. The frontmatter `title` renders as the H1; start the body at `##` and don't skip levels.
-- Second person, active voice, present tense. Avoid be verbs where you can.
+- Second person, active voice, present tense. Fix be verbs: name who acts and use a verb that says what they do.
+- No hyperbole, opinion, intensifiers, or colloquialisms. Replace them with a fact, a number, or a mechanism, or cut them.
+- Don't state product behavior you can't source. Put it in open questions. Never let a rewrite add a claim the source doesn't support.
 - Bold for UI elements and navigation only. Italics for emphasis.
 - Inline code for file names, paths, variables, commands, and output. Fenced blocks always name the language.
 - Relative links for internal pages, with descriptive link text.
@@ -79,6 +83,14 @@ These are the short form. The detail and examples are in the reference files.
 - "Before you begin" holds prerequisites and variable definitions. "More resources" is the last section.
 - Inclusive language: allowlist/blocklist, `main`, `primary`/`replica`, "they" as the default pronoun.
 - Check `src/source/content/partials/` for reusable content before writing new.
+
+## Output
+
+When you draft or revise a page, deliver:
+
+1. The draft.
+2. Open questions: each question, who can answer, and the sentence it blocks.
+3. A self-check: be verbs and banned words you fixed, and any claim left unsourced.
 
 ## Quick reference
 

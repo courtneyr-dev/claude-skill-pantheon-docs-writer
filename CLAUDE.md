@@ -9,7 +9,8 @@ A Claude Code skill packaged as an installable plugin for writing, editing, and 
 ## Files
 
 - **`skills/pantheon-docs-writer/SKILL.md`** — The skill definition. This is what Claude reads and executes when `/jazzsequence-skills:pantheon-docs-writer` is invoked. Kept short: it holds the intro, the Diátaxis step, the workflow table, and the rules that apply to every page. Written as imperative instructions for Claude to follow.
-- **`skills/pantheon-docs-writer/references/*.md`** — Detail loaded on demand from the workflow table in `SKILL.md`: content types and frontmatter, document structure, writing style, components and variables, inclusive language, the review checklist, release notes, navigation and redirects, and repo workflow and terminology.
+- **`skills/pantheon-docs-writer/references/*.md`** — Detail loaded on demand from the workflow table in `SKILL.md`: inputs and claims, content types and frontmatter, document structure, voice rules, writing style, components and variables, placeholders and embeds, inclusive language, search findability (proposed), Vale and automated checks, Docs mode (Google Docs and Content Publisher), the review checklist, release notes, navigation and redirects, and repo workflow and terminology.
+- **`tests/`** — `review-fixtures.json` (272 before/after sentences from a review of 25 docs) and `score.py`, a rough scorer. See `tests/README.md`. Run `python3 tests/score.py validate` after you edit the fixtures or the scorer, and use `score` mode to compare skill output before and after a change.
 - **`.claude-plugin/marketplace.json`** — Marketplace manifest. Registers this repo as a Claude Code plugin source.
 - **`.claude-plugin/plugin.json`** — Plugin manifest. Name, version, author.
 - **`install.sh`** — Installer script. Registers the marketplace and installs the plugin via the Claude CLI.
@@ -20,6 +21,8 @@ When editing `skills/pantheon-docs-writer/SKILL.md`:
 
 - Keep instructions imperative — written for Claude to execute, not for a human to read
 - Put detail in `references/`, not `SKILL.md`. When you add a reference file, add it to the workflow table in `SKILL.md` and to the Files list here.
+- `references/seo-for-authors.md` is proposed guidance, not an adopted Pantheon standard. Keep each item labeled **Style guide**, **Current practice**, or **Proposed**, and don't promote a proposed item without the docs team's agreement.
+- Verify Vale facts in `references/vale-and-checks.md` against `.vale.ini` and `.github/workflows/vale.yml` on `main` whenever you change them.
 - Verify every file path the skill names against `main` in `pantheon-systems/documentation` (for example, partials live in `src/source/content/partials/`, not `src/source/partials/`)
 - Verify style rules and component names against the live Pantheon docs repo (`pantheon-systems/documentation`) before updating
 - The docs site uses Next.js and MDX, not Gatsby — do not reference Gatsby
