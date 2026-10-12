@@ -13,6 +13,10 @@ Invoke it with `/jazzsequence-skills:pantheon-docs-writer`.
 - Guides frontmatter for both docs/guides and release notes
 - Covers navigation (omni-components), redirects (middleware.ts), and the PR contribution workflow
 
+## How it's organized
+
+`skills/pantheon-docs-writer/SKILL.md` is a short router: the workflow, the Diátaxis step, and the rules that apply to every page. The detail lives in `skills/pantheon-docs-writer/references/`, and Claude loads only the files a task needs.
+
 ## Installation
 
 ```bash
