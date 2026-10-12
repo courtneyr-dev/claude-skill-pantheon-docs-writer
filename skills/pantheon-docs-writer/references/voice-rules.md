@@ -24,9 +24,17 @@ Be verbs: is, are, was, were, be, been, being, and phrases built on them ("can b
 | The token is only shown once. | The API shows the token only once. |
 | Whether you are overseeing a single flagship site or a portfolio of sites... | Whether you oversee a single flagship site or a portfolio of sites... |
 | A localized page can be a translation of a source page. | A localized page can translate a source page. |
+| The Metadata section is collapsed by default so optional fields don't take space. | The Metadata section stays collapsed by default so optional fields don't take space. |
+| A live environment is required for any production use. | Production use requires a live environment. |
+| The default branch is main. | The repository uses `main` as its default branch. |
+| You are able to filter the list. | You can filter the list. |
+
+**Rules for the rewrite:**
+- Every be verb is the main verb of a clause unless it is the exception below. "is collapsed", "is required", "is stored", "is shown" all count, and so does a be verb after a comma or "so that". Replace each one: use an active verb, a state verb ("stays", "remains", "requires", "uses"), or "can".
+- Re-read your rewrite and search it for is, are, was, were, be, been, being, 's and 're before you answer. If one remains as the main verb, rewrite again.
+- The only exception: a definition with no actor where every alternative reads worse ("A workstream is a unit of work"). Keep it, and keep it rare.
 
 **Don't over-correct:**
-- A definition or state can use "is" when no actor exists and no better verb fits. Rewrite only when the result reads more clearly.
 - Don't swap a be verb for a vague verb ("handles", "leverages", "provides"). Pick the verb that says what happens.
 - A rewrite must not add a claim the source doesn't support. If the better verb implies a capability you haven't confirmed, keep your original wording and flag the claim.
 
@@ -50,6 +58,7 @@ Replace the phrase with a fact, a number, or a mechanism. If nothing remains aft
 | Heads-up: this changes what happens on unknown paths. | Note: this changes what happens on unknown paths. |
 | ...not by juggling environments. | ...not by switching between environments. |
 | Ready to dive deeper? Explore the guide to learn how to... | Next, learn how to... |
+| Dive deeper into the component model. | Read the component model reference. |
 
 A claim you delete may have been the only copy of a fact. Before you cut a number or a capability, check whether it belongs in the draft with a source.
 
@@ -60,6 +69,10 @@ A claim you delete may have been the only copy of a fact. Before you cut a numbe
 - One term per concept. Use the product's UI label.
 - Short paragraphs. Put the outcome or key warning first.
 - Spell out an acronym on first use unless every reader knows it.
+
+## When you're asked to return only revised text
+
+Output the revised text and nothing else: no self-check, no commentary, no earlier attempts. Do the checks below silently, and fix problems before you answer. Never print a draft and then a correction.
 
 ## Quick self-check before you deliver
 

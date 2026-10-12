@@ -90,7 +90,7 @@ When you draft or revise a page, deliver:
 
 1. The draft.
 2. Open questions: each question, who can answer, and the sentence it blocks.
-3. A self-check: be verbs and banned words you fixed, and any claim left unsourced.
+3. A self-check: be verbs and banned words you fixed, and any claim left unsourced. Skip it when the request is to return only revised text (see `references/voice-rules.md`).
 
 ## Quick reference
 
