@@ -12,6 +12,7 @@ description: "Write, edit, or review Pantheon documentation. Applies Pantheon st
 - Reviewing a PR for style guide compliance
 - Deciding whether content belongs in a doc vs a guide
 - Choosing the right Diátaxis content type for a topic
+- Checking whether a page mixes types, or finding which docs a feature still needs
 - Structuring a "Before You Begin" section or "More Resources" list
 - Selecting the right MDX component (callout, tab, accordion, etc.)
 - Writing or editing release notes
@@ -43,6 +44,17 @@ Before writing a single word, classify the content. All Pantheon docs fall into 
 
 **Rule:** A single document should serve one quadrant. Don't mix a tutorial with a reference. If you're covering both concepts and steps, split them.
 
+**What each type does and doesn't do** (full rules and skeletons in the file named in the last column):
+
+| Type | Does | Doesn't | File |
+|---|---|---|---|
+| Tutorial | Opens with what the reader builds. One path, a visible result at every step, expected output, one-clause explanations. | Offer options, teach theory, assume knowledge. | `references/tutorials.md` |
+| How-to guide | Titles by outcome, starts at a named place, gives imperative steps, ends with a check. | Teach from zero, list every option, argue why. | `references/how-to-guides.md` |
+| Reference | Mirrors the product, uses one pattern per entry, states exact names, defaults, limits. | Instruct, explain, or opine. | `references/reference-docs.md` |
+| Explanation | Answers why, gives context and trade-offs, links to the pages that apply it. | Give procedures or exhaustive option lists. | `references/explanation.md` |
+
+If a request or page spans more than one type, or you're asked what a feature still needs, load `references/type-check.md`: it covers mixed-page detection, splitting, and gap assessment.
+
 **Pantheon mapping:**
 - Tutorials → multipage guides (`contenttype: [guide]`) in `src/source/content/guides/`
 - How-to guides → single docs or guides depending on length/complexity
@@ -58,7 +70,7 @@ Work through these in order. Load a reference file only when its step applies; d
 | # | Step | What you do | Load |
 |---|---|---|---|
 | 1 | Inputs and claims | Get the reader, goal, starting point, prerequisites, and a source for each product claim. Mark what you can't source as an open question. | `references/inputs-claims-and-sources.md` |
-| 2 | Classify | Pick the Diátaxis quadrant (section above). | none |
+| 2 | Classify | Pick the Diátaxis quadrant (section above). Report type, confidence, and evidence. Load the type's file for its rules and skeleton. | `references/type-check.md`, plus the type's file |
 | 3 | Content type and location | `doc` or `guide`; where the file goes; frontmatter. Release notes use a different schema. In a Google Doc published through Content Publisher, use Docs mode instead. | `references/content-types-and-frontmatter.md`, `references/release-notes.md`, `references/docs-mode.md` |
 | 4 | Structure | Intro, Before you begin, sections, Troubleshooting, More resources. | `references/document-structure.md` |
 | 5 | Write | Voice (be verbs, hyperbole), headings, emphasis, code, links, lists, tables, images, where the user is. | `references/voice-rules.md`, `references/writing-style.md` |

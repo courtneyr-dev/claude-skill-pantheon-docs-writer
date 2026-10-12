@@ -34,3 +34,9 @@ Run this before and after you change `SKILL.md` or a reference file, and compare
 - The hyperbole check uses a short phrase list. It misses claims that fall outside the list.
 - Heading case ignores proper nouns that aren't in the script's short list. Add names to `PROPER` as they come up.
 - Passing means the output removed the known problem. It doesn't mean the output is good. Read a sample.
+
+## Type fixtures
+
+- `type-fixtures.json`: 12 short pages (2 per type, 4 mixed) with the expected Diátaxis type.
+- `score_types.py classify answers.json` scores one-word classifications. `score_types.py draft answers.json` checks structural markers in drafted tutorial, how-to, reference, and explanation pages (for example, a reference page has a table and no numbered procedure).
+- The classification set is easy: a no-skill baseline scores 12 of 12. Add harder, real pages before you rely on it.
