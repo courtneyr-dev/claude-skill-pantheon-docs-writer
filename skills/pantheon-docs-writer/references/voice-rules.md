@@ -28,11 +28,16 @@ Be verbs: is, are, was, were, be, been, being, and phrases built on them ("can b
 | A live environment is required for any production use. | Production use requires a live environment. |
 | The default branch is main. | The repository uses `main` as its default branch. |
 | You are able to filter the list. | You can filter the list. |
+| Confirm that the block is available on the site. | Confirm that the site has the block. |
+| At this time, the release is private. | Pantheon limits access during the private release. |
+| Confirm that you are working in the intended workstream. | Confirm that you work in the intended workstream. |
+| The field was left empty. | You left the field empty. |
 
 **Rules for the rewrite:**
 - Every be verb is the main verb of a clause unless it is the exception below. "is collapsed", "is required", "is stored", "is shown" all count, and so does a be verb after a comma or "so that". Replace each one: use an active verb, a state verb ("stays", "remains", "requires", "uses"), or "can".
+- Contractions count: "it's available", "that's required", "you're working" are be verbs. So are progressive forms ("you are working", "is being created"), passives with "was" or "were" ("a field that was left empty"), and predicate adjectives ("is available", "is private", "is in beta"). For a state, name who or what limits or provides it ("the site has the block", "Pantheon limits access").
 - Re-read your rewrite and search it for is, are, was, were, be, been, being, 's and 're before you answer. If one remains as the main verb, rewrite again.
-- The only exception: a definition with no actor where every alternative reads worse ("A workstream is a unit of work"). Keep it, and keep it rare.
+- The only exception: a glossary-style definition of a term, where every alternative reads worse ("A workstream is a unit of work"). Keep it rare. Product intros, overviews, and feature descriptions aren't definitions: name the product as the actor ("P1 unites business tools and developer workflows in one platform", not "P1 is a platform that...").
 
 **Don't over-correct:**
 - Don't swap a be verb for a vague verb ("handles", "leverages", "provides"). Pick the verb that says what happens.
