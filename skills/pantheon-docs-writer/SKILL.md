@@ -85,6 +85,8 @@ Work through these in order. Load a reference file only when its step applies; d
 These are the short form. The detail and examples are in the reference files.
 
 - Sentence case for all headings. The frontmatter `title` renders as the H1; start the body at `##` and don't skip levels.
+- In a Google Doc (Docs mode), the page title is the one `#` Heading 1, not a bold line or a "Title:" label. Sections start at `##`. Never skip a level.
+- The page body holds only reader content. Source gaps, "none stated in the source", reviewer notes, and "I assumed" remarks go in Open questions after the draft, never in a heading, table cell, or paragraph of the page.
 - Second person, active voice, present tense. Replace every be verb that is a clause's main verb: name who acts and use a verb that says what they do. Contractions (`it's`, `you're`), progressives ("you are working" becomes "you work"), passives ("a field that was left empty" becomes "a field you left empty"), and predicate adjectives ("is available", "is private") all count. For a state, say who provides or limits it ("the site has the block"). Keep "is" only in a glossary-style definition; product intros and overviews name the product as the actor. Before you answer, search your rewrite for is, are, was, were, be, been, being, `'s`, `'re`. Details and examples: `references/voice-rules.md`.
 - No hyperbole, opinion, intensifiers, or colloquialisms. Replace them with a fact, a number, or a mechanism, or cut them.
 - Don't state product behavior you can't source. Put it in open questions. Never let a rewrite add a claim the source doesn't support.

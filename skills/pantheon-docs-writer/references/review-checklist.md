@@ -25,6 +25,8 @@ Before delivering or committing any doc:
 
 **Style**
 - [ ] Sentence case on all headings
+- [ ] One `#` title, sections at `##`, no skipped heading levels (Docs mode: real Heading styles, no bold-line titles)
+- [ ] No source-gap or reviewer notes inside the page body (they belong in Open questions)
 - [ ] Bold used only for UI elements and navigation
 - [ ] Italics for emphasis (not bold)
 - [ ] Second person throughout ("you", not "we" or "the user")
