@@ -1,0 +1,62 @@
+[
+ {
+  "id": "t1",
+  "expected": "tutorial",
+  "text": "In this tutorial, you deploy a sample site on P1. 1. Create a project named Anita Agency. The dashboard shows the new site. 2. Click Deploy. After a minute the page shows a green check. You built and deployed your first site."
+ },
+ {
+  "id": "t2",
+  "expected": "tutorial",
+  "text": "Follow along to build your first block. Step 1: run the generator and notice the new folder. Step 2: edit the title field and see the preview update. Congratulations, you made a block."
+ },
+ {
+  "id": "h1",
+  "expected": "how-to",
+  "text": "Connect an AI assistant to P1. Before you begin: you need an API token. 1. Open the P1 dashboard and select Settings. 2. Copy the MCP URL. 3. Paste it in your assistant's connector settings. 4. Ask it to list pages to confirm it works."
+ },
+ {
+  "id": "h2",
+  "expected": "how-to",
+  "text": "To rotate a token: open Users, select the user, choose Revoke, then create a new token. If the old token still works after 5 minutes, contact support."
+ },
+ {
+  "id": "r1",
+  "expected": "reference",
+  "text": "Page metadata fields. title (string, required): the page title. slug (string, default: derived from title): the URL segment. noindex (boolean, default false): hides the page from search. publishedAt (date): publish time in UTC."
+ },
+ {
+  "id": "r2",
+  "expected": "reference",
+  "text": "MCP tools. list_pages: returns pages; parameters: limit (int, max 100), cursor (string). get_page: returns one page by id; parameters: id (string, required). Errors: 404 page not found; 401 invalid token."
+ },
+ {
+  "id": "e1",
+  "expected": "explanation",
+  "text": "Why P1 separates content from rendering. Early versions stored layout with content, which made redesigns require migrations. P1 now stores structured content in the CRR and renders it at request time. The trade-off is an extra lookup per request, which caching offsets."
+ },
+ {
+  "id": "e2",
+  "expected": "explanation",
+  "text": "How localization works in P1. A localized page links to a source page, so edits to the source flag the translation as stale. This design favors consistency over speed, and fits sites with a small set of locales better than sites with dozens."
+ },
+ {
+  "id": "m1",
+  "expected": "mixed",
+  "text": "Page redirects. Redirects exist because search engines remember URLs, and a moved page would otherwise return 404 and lose ranking. To add one: 1. Open Redirects. 2. Enter the old path. 3. Enter the new path. Fields: from (string, required), to (string, required), status (301 or 302, default 301)."
+ },
+ {
+  "id": "m2",
+  "expected": "mixed",
+  "text": "Getting started. P1 is a headless platform built on a content repository, which gives teams a flexible model. Step 1: install the CLI with npm. Step 2: run init. You could also use Yarn or pnpm. Options: --template (string), --force (flag), --dry-run (flag)."
+ },
+ {
+  "id": "m3",
+  "expected": "mixed",
+  "text": "Architecture 101. P1 has three layers: the CRR, the query engine, and the renderer. Here is how to query a page: 1. Call get_page with an id. 2. Read the blocks array. The renderer exists so that frontends stay thin."
+ },
+ {
+  "id": "m4",
+  "expected": "mixed",
+  "text": "User roles. Roles limit what users change, which protects published content. Admin: all actions. Editor: edit pages. Viewer: read only. To assign a role, open Users, pick a person, and choose a role."
+ }
+]

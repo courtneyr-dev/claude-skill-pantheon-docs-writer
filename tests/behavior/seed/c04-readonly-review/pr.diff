@@ -1,0 +1,23 @@
+diff --git a/src/source/content/sftp-connect.md b/src/source/content/sftp-connect.md
+new file mode 100644
+--- /dev/null
++++ b/src/source/content/sftp-connect.md
+@@ -0,0 +1,18 @@
++---
++title: Connect over SFTP
++description: Connect to your site over SFTP.
++contenttype: [doc]
++categories: [sftp]
++innav: [true]
++reviewed: "2026-10-12"
++---
++
++Connect to your Wordpress site seamlessly over SFTP.
++
++## Connection Settings
++
++Click [here](/sftp-settings) to see the settings. **It's important** to use port 2222.
++
++Each site supports up to 50 simultaneous SFTP users.
++
++Mac users can use the best SFTP client, Cyberduck.

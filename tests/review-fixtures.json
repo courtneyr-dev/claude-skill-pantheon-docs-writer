@@ -1,0 +1,2178 @@
+[
+ {
+  "id": "00-agent-guide:S1",
+  "doc": "00 - Agent Guide",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case for all headings)",
+  "before": "## **Agentic Interaction with P1**",
+  "after": "## **Agentic interaction with P1**"
+ },
+ {
+  "id": "00-agent-guide:S2",
+  "doc": "00 - Agent Guide",
+  "category": "other",
+  "rule": "Google style (descriptive link text; don't use \"here\")",
+  "before": "[Learn more about agentic control of P1 here](https://live-p1-docs.pantheonsite.io/agentic-guide/how-to-connect-an-ai-assistant-to-p1)",
+  "after": "[Connect an AI assistant to P1](https://live-p1-docs.pantheonsite.io/agentic-guide/how-to-connect-an-ai-assistant-to-p1)"
+ },
+ {
+  "id": "00-agent-guide:S3",
+  "doc": "00 - Agent Guide",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (assume only the knowledge the reader has; explain everything else); Google style (spell out an abbreviation on first use)",
+  "before": "In addition to using one or more agents inside the P1 editor, P1 can be connected to your preferred tools via MCP.",
+  "after": "You can use agents inside the P1 editor, or connect P1 to your preferred tools through the Model Context Protocol (MCP)."
+ },
+ {
+  "id": "00-agent-guide:S4",
+  "doc": "00 - Agent Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (avoid be verbs, colloquialisms)",
+  "before": "A useful mental model is a multiplayer web team: people and agents work from shared context, and P1 supplies the workflow needed to inspect, discuss, test, approve, release, or roll back changes.",
+  "after": "Think of a web team where people and agents work from shared context, and P1 supplies the workflow to inspect, discuss, test, approve, release, or roll back changes."
+ },
+ {
+  "id": "01-connect-ai-assistant:S1",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "beforebegin",
+  "rule": "Before You Begin Sections",
+  "before": "Before you start, you need:",
+  "after": "Before you begin, be sure that you have:"
+ },
+ {
+  "id": "01-connect-ai-assistant:S2",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "\\~/.cursor/mcp.json and save:",
+  "after": "`Add this entry to `~/.cursor/mcp.json` and save:`"
+ },
+ {
+  "id": "01-connect-ai-assistant:S3",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "other",
+  "rule": "Google style (code font for literal URLs and typed values)",
+  "before": "Server URL: https://mcp.p1.pantheon.io/mcp",
+  "after": "`Server URL: `https://mcp.p1.pantheon.io/mcp` `"
+ },
+ {
+  "id": "01-connect-ai-assistant:S4",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "bold",
+  "rule": "Bold (bold marks navigation elements in a UI); Code Samples (Inline)",
+  "before": "3.  Name it **Pantheon P1** and enter https://mcp.p1.pantheon.io/mcp as the URL.",
+  "after": "`3.  Name it `Pantheon P1` and enter `https://mcp.p1.pantheon.io/mcp` as the URL.`"
+ },
+ {
+  "id": "01-connect-ai-assistant:S5",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "hyper",
+  "rule": "Google style (avoid \"just\"); Voice, Style, and Flow (avoid colloquialisms)",
+  "before": "If you don't see this option, just click **Add**.",
+  "after": "If you don't see this option, click **Add**."
+ },
+ {
+  "id": "01-connect-ai-assistant:S6",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "4.  Under OAuth client, choose **Register automatically**, then click **Add**.",
+  "after": "4.  Under **OAuth client**, choose **Register automatically**, then click **Add**."
+ },
+ {
+  "id": "01-connect-ai-assistant:S7",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "bold",
+  "rule": "Google style (use \"go to\" or \"open\" instead of \"navigate\"); Bold",
+  "before": "2.  Navigate to the MCP tab.",
+  "after": "2.  Open the **MCP** tab."
+ },
+ {
+  "id": "01-connect-ai-assistant:S8",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "2.  Select p1, choose Authenticate, then sign in with your Pantheon account in the browser window that opens.",
+  "after": "`2.  Select `p1`, choose **Authenticate**, then sign in with your Pantheon account in the browser window that opens.`"
+ },
+ {
+  "id": "01-connect-ai-assistant:S9",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "1.  In the [P1 dashboard](http://content.pantheon.io), go to Agents and click Register agent.",
+  "after": "1.  In the [P1 dashboard](http://content.pantheon.io), go to **Agents** and click **Register agent**."
+ },
+ {
+  "id": "01-connect-ai-assistant:S10",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "be",
+  "rule": "Bold; Voice, Style, and Flow (avoid be verbs)",
+  "before": "3.  Click Show keys, then Generate key. Copy the key now, because it won't be shown again.",
+  "after": "3.  Click **Show keys**, then **Generate key**. Copy the key now, because P1 doesn't show it again."
+ },
+ {
+  "id": "01-connect-ai-assistant:S11",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "other",
+  "rule": "Variables (define values before the first command)",
+  "before": "1.  Run the following command in your terminal:",
+  "after": "`1.  Replace `YOUR_AGENT_KEY` with the key you generated, then run the following command in your terminal:`"
+ },
+ {
+  "id": "01-connect-ai-assistant:S12",
+  "doc": "01 - How to connect an AI assistant to P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (avoid be verbs)",
+  "before": "It works as soon as the config is saved.",
+  "after": "It works as soon as you save the config."
+ },
+ {
+  "id": "02-edit-content-mcp:S1",
+  "doc": "02 - How to edit content with the P1 MCP",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (Google style, Vale `Google.We`)",
+  "before": "Curious about what a workstream is? See our [workstream explainer](https://live-p1-docs.pantheonsite.io/user-guide/workstreams).",
+  "after": "To learn what a workstream is, see the [workstream explainer](https://live-p1-docs.pantheonsite.io/user-guide/workstreams)."
+ },
+ {
+  "id": "02-edit-content-mcp:S2",
+  "doc": "02 - How to edit content with the P1 MCP",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (Google style, Vale `Google.We`)",
+  "before": "We suggest you continue experimenting with the P1 MCP. You can learn more about its full capabilities in [P1 MCP Tools](https://live-p1-docs.pantheonsite.io/agent-guide/mcp-tools).",
+  "after": "Keep experimenting with the P1 MCP. For its full capabilities, see [P1 MCP Tools](https://live-p1-docs.pantheonsite.io/agent-guide/mcp-tools)."
+ },
+ {
+  "id": "02-edit-content-mcp:S3",
+  "doc": "02 - How to edit content with the P1 MCP",
+  "category": "other",
+  "rule": "Google style (word list: avoid \"just\" and \"simply\"); Voice, Style, and Flow (informal but succinct)",
+  "before": "With the P1 MCP, you don't need to know tool names or IDs. Just describe what you want in plain language.",
+  "after": "With the P1 MCP, you don't need to know tool names or IDs. Describe what you want in plain language."
+ },
+ {
+  "id": "02-edit-content-mcp:S4",
+  "doc": "02 - How to edit content with the P1 MCP",
+  "category": "be",
+  "rule": "Google style (word list: avoid \"simply\"); Voice, Style, and Flow (avoid be verbs). The rewrite is shorter.",
+  "before": "If you are ever curious what a page can be built from in P1, simply ask your assistant:",
+  "after": "To see what you can build a page from in P1, ask your assistant:"
+ },
+ {
+  "id": "03-p1-mcp-tools:S1",
+  "doc": "03 - P1 MCP tools",
+  "category": "other",
+  "rule": "Google style",
+  "before": "Tool names are shown in brackets for reference.",
+  "after": "Tool names appear in parentheses for reference."
+ },
+ {
+  "id": "03-p1-mcp-tools:S2",
+  "doc": "03 - P1 MCP tools",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "Archive a page (archive\\_page)",
+  "after": "Archive a page (` + `archive_page` set in the same inline code style as the other tool names + `)"
+ },
+ {
+  "id": "03-p1-mcp-tools:S3",
+  "doc": "03 - P1 MCP tools",
+  "category": "other",
+  "rule": "Google style",
+  "before": "You don't need to use tool names; just ask for what you want in plain language.",
+  "after": "You don't need tool names. Ask for what you want in plain language."
+ },
+ {
+  "id": "04-agent-component-library:S1",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (avoid colloquialisms and hyperbole)",
+  "before": "The P1 component library exposes pre-built Puck blocks as first-class citizens in the P1 MCP Server.",
+  "after": "The P1 component library exposes pre-built Puck blocks through the P1 MCP Server."
+ },
+ {
+  "id": "04-agent-component-library:S2",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "other",
+  "rule": "Google style",
+  "before": "Use get\\_page MCP tool to retrieve the current block layout of any page:",
+  "after": "Use the get\\_page MCP tool to retrieve the current block layout of any page:"
+ },
+ {
+  "id": "04-agent-component-library:S3",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (avoid be verbs)",
+  "before": "before attempting to place a block to confirm it is available on the target site and to obtain the correct field schema.",
+  "after": "before placing a block to confirm the target site has it and to get the field schema."
+ },
+ {
+  "id": "04-agent-component-library:S4",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case for all headings)",
+  "before": "## Discovering Available Blocks",
+  "after": "## Discovering available blocks"
+ },
+ {
+  "id": "04-agent-component-library:S5",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case for all headings)",
+  "before": "## Reading Block Content on a Page",
+  "after": "## Reading block content on a page"
+ },
+ {
+  "id": "04-agent-component-library:S6",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case for all headings)",
+  "before": "## Adding a Block to a Page",
+  "after": "## Adding a block to a page"
+ },
+ {
+  "id": "04-agent-component-library:S7",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case for all headings)",
+  "before": "## Editing an Existing Block",
+  "after": "## Editing an existing block"
+ },
+ {
+  "id": "04-agent-component-library:S8",
+  "doc": "04 - (Agent) P1 Component Library",
+  "category": "beforebegin",
+  "rule": "Before You Begin Sections",
+  "before": "## Prerequisites",
+  "after": "## Before you begin"
+ },
+ {
+  "id": "05-localization-guide-agents:S1",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "list\\_locale\\_variants: Find a Source’s Translations and synchronization status.",
+  "after": "` `list_locale_variants`: Find a Source’s Translations and synchronization status. `"
+ },
+ {
+  "id": "05-localization-guide-agents:S2",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "get\\_locale\\_diff: Compare a Translation with its Source and return classified changes.",
+  "after": "` `get_locale_diff`: Compare a Translation with its Source and return classified changes. `"
+ },
+ {
+  "id": "05-localization-guide-agents:S3",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "technical names such as canonical\\_document\\_id and canonical\\_synced\\_version",
+  "after": "` technical names such as `canonical_document_id` and `canonical_synced_version` `"
+ },
+ {
+  "id": "05-localization-guide-agents:S4",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "code",
+  "rule": "Code Samples (Inline)",
+  "before": "Do not expose raw diff classifications such as prop-drift or structural-gap unless the user is asking for technical details.",
+  "after": "` Do not expose raw diff classifications such as `prop-drift` or `structural-gap` unless the user asks for technical details. `"
+ },
+ {
+  "id": "05-localization-guide-agents:S5",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "bold",
+  "rule": "Italics",
+  "before": "The French translation has **7 changes since Source version 10**.",
+  "after": "The French translation has *7 changes since Source version 10*."
+ },
+ {
+  "id": "05-localization-guide-agents:S6",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (Google style, Vale Google.Will)",
+  "before": "Show the user what will change before applying a destructive or broad update.",
+  "after": "Show the user the proposed changes before applying a destructive or broad update."
+ },
+ {
+  "id": "05-localization-guide-agents:S7",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (Google style, Vale Google.Will)",
+  "before": "Explain that the current localized value will be replaced.",
+  "after": "Explain that the action replaces the current localized value."
+ },
+ {
+  "id": "05-localization-guide-agents:S8",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "other",
+  "rule": "Voice, Style, and Flow (Google style, Vale Google.Will)",
+  "before": "Confirm the destination locale and warn if an existing Translation will be overwritten or substantially changed.",
+  "after": "Confirm the destination locale and warn if the action overwrites or substantially changes an existing Translation."
+ },
+ {
+  "id": "05-localization-guide-agents:S9",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (avoid be verbs); S4 carries the first rewrite",
+  "before": "Do not translate into a locale that is not configured for the site.",
+  "after": "Do not translate into an unconfigured locale."
+ },
+ {
+  "id": "05-localization-guide-agents:S10",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "other",
+  "rule": "Google style (use contractions)",
+  "before": "Do not assume that every Source change should overwrite the Translation.",
+  "after": "Don't assume every Source change should overwrite the Translation."
+ },
+ {
+  "id": "05-localization-guide-agents:S11",
+  "doc": "05 - P1 localization guide for agents",
+  "category": "other",
+  "rule": "Google style (active voice)",
+  "before": "The page or document from which a translation may be created. The API may still call this the canonical document.",
+  "after": "The page or document you create a translation from. The API may still call this the canonical document."
+ },
+ {
+  "id": "00-dev-guide:S1",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\")",
+  "before": "## P1 for Developers",
+  "after": "## P1 for developers"
+ },
+ {
+  "id": "00-dev-guide:S2",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should always be stressed with italics, and never with bold\"); Bold (UI navigation only)",
+  "before": "An environment fully built for **real-time collaboration** of all users and agents",
+  "after": "An environment fully built for *real-time collaboration* of all users and agents"
+ },
+ {
+  "id": "00-dev-guide:S3",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "your entire organization’s **portfolio of sites** with the same tools and workflows",
+  "after": "your entire organization’s *portfolio of sites* with the same tools and workflows"
+ },
+ {
+  "id": "00-dev-guide:S4",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "avoiding any one stepping on someone else’s toes,",
+  "after": "so users and agents don’t conflict with each other,"
+ },
+ {
+  "id": "00-dev-guide:S5",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "benefitting from the best of both worlds: freedom of in-page editing and strict governance of only allowing components complying with the design system.",
+  "after": "combining the freedom of in-page editing with governance that allows only components from the design system."
+ },
+ {
+  "id": "00-dev-guide:S6",
+  "doc": "00 - Dev Guide (rubric test)",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "with the same tools and workflows, be it for one site or thousands of sites,",
+  "after": "with the same tools and workflows for one site or thousands of sites,"
+ },
+ {
+  "id": "01-getting-started:S1",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# Getting Started with P1",
+  "after": "# Getting started with P1"
+ },
+ {
+  "id": "01-getting-started:S2",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case); Vale `Pantheon.Headings`",
+  "before": "## Create a Next.js Site With Our Starter Kit",
+  "after": "## Create a Next.js site with our starter kit"
+ },
+ {
+  "id": "01-getting-started:S3",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case); Vale `Pantheon.Headings`",
+  "before": "## Set Next.js Site Secrets",
+  "after": "## Set Next.js site secrets"
+ },
+ {
+  "id": "01-getting-started:S4",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (sentence case)",
+  "before": "## Deploy to a Dev Site on Pantheon.io",
+  "after": "## Deploy to a Dev site on Pantheon.io"
+ },
+ {
+  "id": "01-getting-started:S5",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "at this time, it is a private release, and we will need to manually provision access for you",
+  "after": "Pantheon currently provisions P1 accounts manually during the private release"
+ },
+ {
+  "id": "01-getting-started:S6",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The token will only be shown once; save it to personal secrets or in a secure temporary place, or keep the modal open",
+  "after": "P1 shows the token only once. Save it as a personal secret or in a secure temporary location, or keep the modal open."
+ },
+ {
+  "id": "01-getting-started:S7",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Once the P1 content site is created, generate a token and get your ID",
+  "after": "After you create the P1 content site, generate a token and copy your site ID"
+ },
+ {
+  "id": "01-getting-started:S8",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Check that the site is executing well on localhost by running",
+  "after": "Check that the site runs on localhost by running"
+ },
+ {
+  "id": "01-getting-started:S9",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "At this stage, you should be able to test end-to-end P1 with a hosted site on Pantheon.",
+  "after": "At this stage, you can test P1 end to end on a hosted Pantheon site."
+ },
+ {
+  "id": "01-getting-started:S10",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "A live environment is required for any production use, especially to set your own domain name.",
+  "after": "Any production use requires a live environment, especially to set your own domain name."
+ },
+ {
+  "id": "01-getting-started:S11",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "they might be done differently, not necessarily just replacing the word pnpm with yarn, for example",
+  "after": "some commands differ, so replacing pnpm with yarn or npm won't always work"
+ },
+ {
+  "id": "01-getting-started:S12",
+  "doc": "01 - (Dev) Getting Started",
+  "category": "other",
+  "rule": "Where's the User? (\"direct the user to the area in which an activity is taking place\")",
+  "before": "Create your site in P1 dashboard (<https://content.pantheon.io>)",
+  "after": "In the [P1 dashboard](https://content.pantheon.io), create your site."
+ },
+ {
+  "id": "02-install-nextjs:S1",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The goal here is to install P1 on an existing site to be able to use P1 content management and rendering capabilities for existing and new Content on that site",
+  "after": "Install P1 on an existing site to use P1 content management and rendering for existing and new content on that site"
+ },
+ {
+  "id": "02-install-nextjs:S2",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\"; \"Avoid be verbs\")",
+  "before": "be it the totality of the site or a part of it",
+  "after": "whether that's the whole site or only part of it"
+ },
+ {
+  "id": "02-install-nextjs:S3",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "Three ideas clear up almost every question before it comes up.",
+  "after": "Three ideas explain how P1 works alongside your site."
+ },
+ {
+  "id": "02-install-nextjs:S4",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "not by juggling environments",
+  "after": "not by switching between environments"
+ },
+ {
+  "id": "02-install-nextjs:S5",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid ... hyperbole\"; \"Avoid personal opinions\")",
+  "before": "That's extremely helpful when you want to stage content changes before they go live;",
+  "after": "This lets you stage content changes before they go live;"
+ },
+ {
+  "id": "02-install-nextjs:S6",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "Notice how many a non-technical teammate can grab on their own:",
+  "after": "Notice how many values a non-technical teammate can collect on their own:"
+ },
+ {
+  "id": "02-install-nextjs:S7",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"Avoid personal opinions\"; \"avoid ... hyperbole\")",
+  "before": "That content token is read-only — great for serving pages, but it can't *list* branches.",
+  "after": "That content token is read-only. It serves pages but can't *list* branches."
+ },
+ {
+  "id": "02-install-nextjs:S8",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "## Choosing your version (an important heads-up)",
+  "after": "## Choosing your version"
+ },
+ {
+  "id": "02-install-nextjs:S9",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "Heads-up: this changes what happens on unknown paths",
+  "after": "Note: this changes what happens on unknown paths"
+ },
+ {
+  "id": "02-install-nextjs:S10",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "This is where your team lives day to day — and where P1 gets closest to fully self-serve.",
+  "after": "Your team uses this flow every day, and it's the part of P1 closest to fully self-serve."
+ },
+ {
+  "id": "02-install-nextjs:S11",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "useful for moving a page's existing content over in one shot",
+  "after": "useful for moving a page's existing content over in a single operation"
+ },
+ {
+  "id": "02-install-nextjs:S12",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should *always* be stressed with italics, and *never* with bold\"); Bold (navigational elements only)",
+  "before": "use the **default SDK and starter kit** — no custom connectors, no forks.",
+  "after": "use the *default SDK and starter kit* — no custom connectors, no forks."
+ },
+ {
+  "id": "02-install-nextjs:S13",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "Set the build-time values **site-wide** (these get baked into the build, and per-environment overrides aren't read at build time):",
+  "after": "Set the build-time values *site-wide* (these get baked into the build, and per-environment overrides aren't read at build time):"
+ },
+ {
+  "id": "02-install-nextjs:S14",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "**an environment override needs a site-wide default to exist first**",
+  "after": "*an environment override needs a site-wide default to exist first*"
+ },
+ {
+  "id": "02-install-nextjs:S15",
+  "doc": "02 - Installing P1 on an existing Next.js site",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "**After every deploy, clear the environment's cache.**",
+  "after": "*After every deploy, clear the environment's cache.*"
+ },
+ {
+  "id": "03-update-client:S1",
+  "doc": "03 - Update P1 site to latest P1 client",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\")",
+  "before": "**Update the Packages**",
+  "after": "**Update the packages**"
+ },
+ {
+  "id": "03-update-client:S2",
+  "doc": "03 - Update P1 site to latest P1 client",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "There is no single upgrade command: you update the packages, then apply any code changes listed for the release.",
+  "after": "No single upgrade command exists: you update the packages, then apply any code changes listed for the release."
+ },
+ {
+  "id": "03-update-client:S3",
+  "doc": "03 - Update P1 site to latest P1 client",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "P1 is three npm packages released together on the same version:",
+  "after": "P1 consists of three npm packages released together on the same version:"
+ },
+ {
+  "id": "03-update-client:S4",
+  "doc": "03 - Update P1 site to latest P1 client",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"). The mechanical pass also hit \"will\", which is an optional Google rule (`Google.Will`), so the rewrite uses present tense without citing it.",
+  "before": "Here is a reference guide on the types of changes you will likely be making:",
+  "after": "This table lists the types of changes you'll likely make:"
+ },
+ {
+  "id": "04-component-library-dev:S1",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# P1 Component Library",
+  "after": "# P1 component library"
+ },
+ {
+  "id": "04-component-library-dev:S2",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The P1 component library is a shadcn registry hosted at components.p1.pantheon.io.",
+  "after": "The P1 component library, a shadcn registry hosted at components.p1.pantheon.io, ships 37 pre-built Puck blocks styled to the P1 design system."
+ },
+ {
+  "id": "04-component-library-dev:S3",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "That file is yours and likely edited.",
+  "after": "You own that file and likely edit it."
+ },
+ {
+  "id": "04-component-library-dev:S4",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The export name is not always the directory name.",
+  "after": "The export name doesn't always match the directory name."
+ },
+ {
+  "id": "04-component-library-dev:S5",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "A block added only to p1Blocks is registered but invisible in the editor.",
+  "after": "A block you add only to p1Blocks stays registered but doesn't appear in the editor."
+ },
+ {
+  "id": "04-component-library-dev:S6",
+  "doc": "04 - (Dev) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Both the p1Blocks entry and the p1Categories entry are required.",
+  "after": "Each block needs both a p1Blocks entry and a p1Categories entry."
+ },
+ {
+  "id": "05-architecture-101:S1",
+  "doc": "05 - P1 Architecture 101",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# P1 Architecture 101",
+  "after": "# P1 architecture 101"
+ },
+ {
+  "id": "05-architecture-101:S2",
+  "doc": "05 - P1 Architecture 101",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "## And built for Agentic Content and Web Operations",
+  "after": "## And built for agentic content and web operations"
+ },
+ {
+  "id": "05-architecture-101:S3",
+  "doc": "05 - P1 Architecture 101",
+  "category": "other",
+  "rule": "Vale `Google.Exclamation` (enabled)",
+  "before": "your choice\\!",
+  "after": "your choice."
+ },
+ {
+  "id": "05-architecture-101:S4",
+  "doc": "05 - P1 Architecture 101",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "P1 is designed for AI but also for composability.",
+  "after": "Pantheon designed P1 for AI and for composability."
+ },
+ {
+  "id": "05-architecture-101:S5",
+  "doc": "05 - P1 Architecture 101",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "All capabilities of P1 are designed as APIs, then exposed to agents through MCP tools and skills, to human users through Web user interfaces and command line interfaces.",
+  "after": "P1 provides every capability as an API, then exposes it to agents through MCP tools and skills, and to human users through web user interfaces and command line interfaces."
+ },
+ {
+  "id": "05-architecture-101:S6",
+  "doc": "05 - P1 Architecture 101",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "It’s service oriented (not micro-service oriented but meaningful-service oriented).",
+  "after": "It uses meaningful services rather than microservices."
+ },
+ {
+  "id": "05-architecture-101:S7",
+  "doc": "05 - P1 Architecture 101",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The solution is architected around a back-end provided as a service, and a front-end executed on your websites running Pantheon Next.js.",
+  "after": "The solution has a back end that runs as a service and a front end that runs on your websites with Pantheon Next.js."
+ },
+ {
+  "id": "05-architecture-101:S8",
+  "doc": "05 - P1 Architecture 101",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "## Distributed to get the best of both worlds",
+  "after": "## Distributed for flexibility and control"
+ },
+ {
+  "id": "05-architecture-101:S9",
+  "doc": "05 - P1 Architecture 101",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "P1 here as well provides the best of two words.",
+  "after": "P1 provides both speed and governance."
+ },
+ {
+  "id": "05-architecture-101:S10",
+  "doc": "05 - P1 Architecture 101",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "P1 comes with a unique concept that allow both to strongly leverage design systems and shared component libraries,",
+  "after": "P1 lets teams use design systems and shared component libraries,"
+ },
+ {
+  "id": "05-architecture-101:S11",
+  "doc": "05 - P1 Architecture 101",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "while totally letting them be creative and free thanks to the visual editor",
+  "after": "while the visual editor gives them room to create"
+ },
+ {
+  "id": "05-architecture-101:S12",
+  "doc": "05 - P1 Architecture 101",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "making sure content creators are always staying within the constraints of these,",
+  "after": "so content creators stay within their constraints,"
+ },
+ {
+  "id": "05-architecture-101:S13",
+  "doc": "05 - P1 Architecture 101",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "implementing our unique agent politeness framework",
+  "after": "implementing our agent politeness framework"
+ },
+ {
+  "id": "07-page-rendering:S1",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# Page Rendering",
+  "after": "# Page rendering"
+ },
+ {
+  "id": "07-page-rendering:S2",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Architecture Reminder",
+  "after": "## Architecture reminder"
+ },
+ {
+  "id": "07-page-rendering:S3",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Static Page Rendering",
+  "after": "## Static page rendering"
+ },
+ {
+  "id": "07-page-rendering:S4",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Dynamic Page Rendering",
+  "after": "## Dynamic page rendering"
+ },
+ {
+  "id": "07-page-rendering:S5",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Template System for Content and Page Types",
+  "after": "## Template system for content and page types"
+ },
+ {
+  "id": "07-page-rendering:S6",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Page Redirects",
+  "after": "## Page redirects"
+ },
+ {
+  "id": "07-page-rendering:S7",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms and hyperbole\")",
+  "before": "Understanding how the key layers interact is essential to understanding how page rendering works.",
+  "after": "Knowing how the key layers interact helps you understand page rendering."
+ },
+ {
+  "id": "07-page-rendering:S8",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "This said, P1 offers an option to override each page layout and structure to possibly update a specific route",
+  "after": "However, P1 lets you override the layout and structure of a page to update a specific route"
+ },
+ {
+  "id": "07-page-rendering:S9",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "allowing for totally different layouts or page composition",
+  "after": "allowing for different layouts or page composition"
+ },
+ {
+  "id": "07-page-rendering:S10",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid ... hyperbole\")",
+  "before": "can embed highly interactive or personalized components",
+  "after": "can embed interactive or personalized components"
+ },
+ {
+  "id": "07-page-rendering:S11",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "a description (very important for users and furthermore for agents to understand when and how to use the templates)",
+  "after": "a description (users and agents need it to understand when and how to use the template)"
+ },
+ {
+  "id": "07-page-rendering:S12",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid ... hyperbole\")",
+  "before": "define the non-negotiable layout of pages created from that template",
+  "after": "define the fixed layout of pages created from that template"
+ },
+ {
+  "id": "07-page-rendering:S13",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms\")",
+  "before": "As by design, P1 is based on Next.js and uses Next.js routing system, developers are always able to define their own routes outside of P1.",
+  "after": "P1 is built on Next.js and uses the Next.js routing system, so you can define your own routes outside of P1."
+ },
+ {
+  "id": "07-page-rendering:S14",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid ... hyperbole\")",
+  "before": "This is one of the values of P1 client architecture, offering maximum flexibility.",
+  "after": "This is one benefit of the P1 Client architecture."
+ },
+ {
+  "id": "07-page-rendering:S15",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "there are plenty of reasons this might be needed and it is very simple to implement: simply created a dedicated route in your Next.js application for that purpose.",
+  "after": "there are many reasons you might need this. To implement it, create a dedicated route in your Next.js application."
+ },
+ {
+  "id": "07-page-rendering:S16",
+  "doc": "07 - (Dev) Page Rendering",
+  "category": "other",
+  "rule": "Vale `Google.Latin` (enabled): use \"for example\" instead of \"e.g.\"",
+  "before": "When a parent section's slug changes (e.g., /news/ renamed to /articles/), a single redirect rule",
+  "after": "When a parent section's slug changes (for example, /news/ renamed to /articles/), a single redirect rule"
+ },
+ {
+  "id": "09-cors:S1",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "Configuring CORS for Your P1 Site",
+  "after": "Configuring CORS for your P1 site"
+ },
+ {
+  "id": "09-cors:S2",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should always be stressed with italics, and never with bold\"); Bold (UI navigation only)",
+  "before": "By default, the P1 API accepts requests from **any origin**.",
+  "after": "By default, the P1 API accepts requests from *any origin*."
+ },
+ {
+  "id": "09-cors:S3",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "bold",
+  "rule": "Bold (UI navigation only); Italics",
+  "before": "Changes to allowedOrigins take effect within approximately **5 minutes** across all regions.",
+  "after": "Changes to allowedOrigins take effect within approximately 5 minutes across all regions."
+ },
+ {
+  "id": "09-cors:S4",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "bold",
+  "rule": "Bold (UI navigation only)",
+  "before": "**Note on localhost:** Requests from localhost and 127.0.0.1 (on any port) are always accepted.",
+  "after": "Note on localhost: the API always accepts requests from localhost and 127.0.0.1 (on any port)."
+ },
+ {
+  "id": "09-cors:S5",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should always be stressed with italics\")",
+  "before": "but NOT a.b.mysite.com",
+  "after": "but *not* a.b.mysite.com"
+ },
+ {
+  "id": "09-cors:S6",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "Default behaviour: works out of the box",
+  "after": "Default behaviour: works without configuration"
+ },
+ {
+  "id": "09-cors:S7",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "No action required. The P1 SDK will work with your site out of the box.",
+  "after": "No action required. The P1 SDK works with your site without extra configuration."
+ },
+ {
+  "id": "09-cors:S8",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "If CORS is not configured correctly for your domain, the browser will block every request the P1 editor makes, and the editor will fail to load.",
+  "after": "If you don't configure CORS correctly for your domain, the browser blocks every request the P1 editor makes, and the editor fails to load."
+ },
+ {
+  "id": "09-cors:S9",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "a security mechanism that requires the API to explicitly declare which origins are allowed to make requests to it.",
+  "after": "a security mechanism that requires the API to explicitly declare which origins can make requests to it."
+ },
+ {
+  "id": "09-cors:S10",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "localhost and 127.0.0.1 are always accepted regardless of your configuration.",
+  "after": "The API always accepts localhost and 127.0.0.1, regardless of your configuration."
+ },
+ {
+  "id": "09-cors:S11",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Once you do this, the wildcard is replaced by your list — only the origins you configure will be accepted.",
+  "after": "Once you do this, your list replaces the wildcard, and the API accepts only the origins you configure."
+ },
+ {
+  "id": "09-cors:S12",
+  "doc": "09 - (Dev) Configuring CORS for Your P1 Site",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Requests from any other origin will be blocked.",
+  "after": "The API blocks requests from any other origin."
+ },
+ {
+  "id": "10-media-images:S1",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# **P1 Media Image Management for Developers**",
+  "after": "# **P1 media image management for developers**"
+ },
+ {
+  "id": "10-media-images:S2",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "other",
+  "rule": "Vale `Google.Latin` (enabled)",
+  "before": "Pins which metadata fields (e.g. caption, credit, byline) appear and in what order.",
+  "after": "Pins which metadata fields (for example, caption, credit, byline) appear and in what order."
+ },
+ {
+  "id": "10-media-images:S3",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "other",
+  "rule": "Vale `Google.Latin` (enabled)",
+  "before": "(e.g. heroImageUrl → heroImageAlt)",
+  "after": "(for example, heroImageUrl → heroImageAlt)"
+ },
+ {
+  "id": "10-media-images:S4",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "other",
+  "rule": "Vale `Google.Latin` (enabled)",
+  "before": "(e.g. fit=cover\\&gravity=auto, fit=scale-down, or trim.\\*)",
+  "after": "(for example, fit=cover\\&gravity=auto, fit=scale-down, or trim.\\*)"
+ },
+ {
+  "id": "10-media-images:S5",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "other",
+  "rule": "Vale `Google.Latin` (enabled)",
+  "before": "you can't add your own custom metadata field name (e.g. \"photographer\") yet.",
+  "after": "you can't add your own custom metadata field name (for example, \"photographer\") yet."
+ },
+ {
+  "id": "10-media-images:S6",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "other",
+  "rule": "Vale `Google.LyHyphens` (enabled)",
+  "before": "previously-issued URLs for that asset keep serving from cache",
+  "after": "previously issued URLs for that asset keep serving from cache"
+ },
+ {
+  "id": "10-media-images:S7",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should *always* be stressed with italics, and *never* with bold\"); Bold (UI navigation only)",
+  "before": "**Read this section carefully — the crop and transform options an editor sees are not currently configurable per site or per component.**",
+  "after": "*Read this section carefully.* You can't currently configure the crop and transform options an editor sees per site or per component."
+ },
+ {
+  "id": "10-media-images:S8",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Italics; Bold; Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "**There is no focal-point/gravity picker in the editor**",
+  "after": "The editor has *no* focal-point/gravity picker"
+ },
+ {
+  "id": "10-media-images:S9",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "\\*\\*SVG is explicitly not allowed\\*\\*",
+  "after": "SVG uploads are *blocked*"
+ },
+ {
+  "id": "10-media-images:S10",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "request it with **no transform query parameters**",
+  "after": "request it with *no* transform query parameters"
+ },
+ {
+  "id": "10-media-images:S11",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "bold",
+  "rule": "Italics; Bold",
+  "before": "\\*\\*Puck ≥0.20\\*\\*",
+  "after": "*Puck ≥0.20*"
+ },
+ {
+  "id": "10-media-images:S12",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Bold (UI navigation only); Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "that's all run by **Pantheon**.",
+  "after": "Pantheon runs all of that."
+ },
+ {
+  "id": "10-media-images:S13",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should *always* be stressed with italics\")",
+  "before": "the image is \\*delivered\\* at",
+  "after": "the image is *delivered* at"
+ },
+ {
+  "id": "10-media-images:S14",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "If the plugin is not yet installed on your site:",
+  "after": "If your site doesn't have the plugin yet:"
+ },
+ {
+  "id": "10-media-images:S15",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "A presigned upload URL is valid for 5 minutes.",
+  "after": "A presigned upload URL expires after 5 minutes."
+ },
+ {
+  "id": "10-media-images:S16",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "There's no option to add, remove, or relabel them.",
+  "after": "You can't add, remove, or relabel them."
+ },
+ {
+  "id": "10-media-images:S17",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "There's no prop to change this set today.",
+  "after": "No prop changes this set today."
+ },
+ {
+  "id": "10-media-images:S18",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "There is currently no feature-flag option on the plugin config — everything described in this guide is either always on, or controlled by the options above.",
+  "after": "The plugin config has no feature-flag option. Everything in this guide stays on or depends on the options above."
+ },
+ {
+  "id": "10-media-images:S19",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "Image transforms are performed by Cloudflare's Images service behind the scenes.",
+  "after": "Cloudflare's Images service performs the image transforms."
+ },
+ {
+  "id": "10-media-images:S20",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms\")",
+  "before": "Everything else is handled for you.",
+  "after": "The plugin handles everything else."
+ },
+ {
+  "id": "10-media-images:S21",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "the editor's crop UI already baked them in when the asset was selected",
+  "after": "the editor's crop UI already stored them when the editor selected the asset"
+ },
+ {
+  "id": "10-media-images:S22",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "the plugin bakes the corresponding parameters",
+  "after": "the plugin stores the corresponding parameters"
+ },
+ {
+  "id": "10-media-images:S23",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "which sidesteps this failure mode entirely",
+  "after": "which avoids this failure mode"
+ },
+ {
+  "id": "10-media-images:S24",
+  "doc": "10 - (Dev) Media Image Management for Developers",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"Avoid personal opinions\")",
+  "before": "the endpoint currently returns a generic, unhelpful 500 error rather than a clear message",
+  "after": "the endpoint currently returns a generic 500 error rather than a clear message"
+ },
+ {
+  "id": "shared-component-libraries:S1",
+  "doc": "Shared component libraries",
+  "category": "beforebegin",
+  "rule": "Hyperlinks, Internal Links (\"Use relative paths when linking to other pages of the docs site\"); Before You Begin Sections (Terminus links to the Terminus Guide)",
+  "before": "[Terminus](https://docs.pantheon.io/terminus)",
+  "after": "[Terminus](/terminus)"
+ },
+ {
+  "id": "shared-component-libraries:S2",
+  "doc": "Shared component libraries",
+  "category": "beforebegin",
+  "rule": "Before You Begin Sections (the heading is \"Before you begin\"; the tutorial in this doc already uses it)",
+  "before": "## Before you start",
+  "after": "## Before you begin"
+ },
+ {
+  "id": "shared-component-libraries:S3",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Both are legitimate. They suit different situations.",
+  "after": "Both work. Each suits different situations."
+ },
+ {
+  "id": "shared-component-libraries:S4",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "That is the point for a one-off site. In a fleet, it is the problem.",
+  "after": "A one-off site wants that independence. In a fleet, it causes the problem."
+ },
+ {
+  "id": "shared-component-libraries:S5",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Every file of site-specific code is a liability for the central team:",
+  "after": "Every file of site-specific code adds risk and review work for the central team:"
+ },
+ {
+  "id": "shared-component-libraries:S6",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "the library's versioning policy is really a promise about content:",
+  "after": "the library's versioning policy promises that saved content keeps working:"
+ },
+ {
+  "id": "shared-component-libraries:S7",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Everything that makes the Biology site different from the English site is content, and content lives in the CMS, where departments edit it.",
+  "after": "Content makes the Biology site different from the English site, and departments edit that content in the CMS."
+ },
+ {
+  "id": "shared-component-libraries:S8",
+  "doc": "Shared component libraries",
+  "category": "bold",
+  "rule": "Italics (\"Emphasis should always be stressed with italics, and never with bold\"); Bold (UI navigation only)",
+  "before": "\\*\\*Required on\\*\\* \\*\\*main\\*\\*\\*\\*.\\*\\* Pins a released version.",
+  "after": "*Required on main.* Pins a released version."
+ },
+ {
+  "id": "shared-component-libraries:S9",
+  "doc": "Shared component libraries",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "This is intended: a block built for one department is available to all.",
+  "after": "This is by design: a block built for one department reaches every department."
+ },
+ {
+  "id": "00-user-guide:S1",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"Avoid personal opinions, feelings, or anecdotes\")",
+  "before": "We believe your editorial team shouldn't have to choose between creative freedom and brand consistency.",
+  "after": "Your editorial team doesn't have to choose between creative freedom and brand consistency."
+ },
+ {
+  "id": "00-user-guide:S2",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "P1 features an intuitive, drag-and-drop visual editor that allows content creators to effortlessly build and manage pages.",
+  "after": "P1 includes a drag-and-drop visual editor that lets content creators build and manage pages."
+ },
+ {
+  "id": "00-user-guide:S3",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\"; \"Avoid be verbs\")",
+  "before": "It is total creative flexibility, safely guarded by central governance.",
+  "after": "Contributors keep creative flexibility, and central governance protects the design system."
+ },
+ {
+  "id": "00-user-guide:S4",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "ensuring a perfectly coordinated launch with zero risk to your production site.",
+  "after": "so the changes launch together."
+ },
+ {
+  "id": "00-user-guide:S6",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms and hyperbole\")",
+  "before": "P1 isn't just an AI-assisted platform; it is fundamentally designed to be operated by AI agents just as easily as it is by humans.",
+  "after": "AI agents and humans can both operate P1."
+ },
+ {
+  "id": "00-user-guide:S7",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "achieve unprecedented velocity in their web operations while maintaining absolute control over their brand, security, and site architecture.",
+  "after": "work faster while keeping control over their brand, security, and site architecture."
+ },
+ {
+  "id": "00-user-guide:S8",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Ultimately, P1 is built to solve the orchestration challenges of the modern web team.",
+  "after": "P1 solves orchestration challenges for web teams."
+ },
+ {
+  "id": "00-user-guide:S9",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "## Superior speed and control at scale",
+  "after": "## Speed and control at scale"
+ },
+ {
+  "id": "00-user-guide:S10",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "P1 delivers the next level of speed, governance, and coordination for your daily web operations.",
+  "after": "P1 speeds up, governs, and coordinates your daily web operations."
+ },
+ {
+  "id": "00-user-guide:S11",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "build, manage, and scale websites faster than ever without losing control.",
+  "after": "build, manage, and scale websites without losing control."
+ },
+ {
+  "id": "00-user-guide:S12",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "Ready to dive deeper? Explore the guide to learn how to",
+  "after": "Next, learn how to"
+ },
+ {
+  "id": "00-user-guide:S13",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms and hyperbole\")",
+  "before": "Pantheon P1 is an enterprise-grade website management platform designed to unite business friendliness with developer experience.",
+  "after": "Pantheon P1 unites business friendliness and developer experience in one website management platform."
+ },
+ {
+  "id": "00-user-guide:S14",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms\")",
+  "before": "Whether you are overseeing a single flagship site or a sprawling portfolio of hundreds of websites,",
+  "after": "Whether you oversee a single flagship site or a portfolio of hundreds of websites,"
+ },
+ {
+  "id": "00-user-guide:S15",
+  "doc": "00 - User Guide",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms and hyperbole\")",
+  "before": "Here are the core components that make P1 unique:",
+  "after": "P1 includes these core components:"
+ },
+ {
+  "id": "00-user-guide:S16",
+  "doc": "00 - User Guide",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "The Best Partner for Humans-in-Control:",
+  "after": "Humans stay in control:"
+ },
+ {
+  "id": "01-user-management:S1",
+  "doc": "01 - User Management",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings` (enabled)",
+  "before": "### Permissions by Role",
+  "after": "### Permissions by role"
+ },
+ {
+  "id": "01-user-management:S2",
+  "doc": "01 - User Management",
+  "category": "beforebegin",
+  "rule": "Before You Begin Sections (the guide's example heading is \"Before you begin\")",
+  "before": "## Before you start",
+  "after": "## Before you begin"
+ },
+ {
+  "id": "01-user-management:S3",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "You must be an administrator for the Business Account you want to manage.",
+  "after": "You need administrator access for the Business Account you want to manage."
+ },
+ {
+  "id": "01-user-management:S4",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; assume only what Before You Begin states). Also see C4.",
+  "before": "If you are not in the right Business Account (users), use the top left switcher to go in the desired one.",
+  "after": "If you’re not in the correct Business Account, use the switcher at the top left to select it."
+ },
+ {
+  "id": "01-user-management:S5",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Site-specific permissions, collections, and agent access are managed separately directly in the sites or workstreams.",
+  "after": "You manage site-specific permissions, collections, and agent access separately in each site or workstream."
+ },
+ {
+  "id": "01-user-management:S6",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Agents are automated users that can act on behalf of your Business Account.",
+  "after": "Agents act on behalf of your Business Account as automated users."
+ },
+ {
+  "id": "01-user-management:S7",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "It is available by default in every Business Account and is authorized by P1, so administrators do not need to register or invite it like a customer-created agent.",
+  "after": "P1 makes it available by default in every Business Account and authorizes it, so administrators don’t need to register or invite it like a customer-created agent."
+ },
+ {
+  "id": "01-user-management:S8",
+  "doc": "01 - User Management",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "deactivation is preferable to deleting the user because it preserves the Business Account relationship for later restoration.",
+  "after": "prefer deactivation to deleting the user because it preserves the Business Account relationship for later restoration."
+ },
+ {
+  "id": "02-site-structure:S1",
+  "doc": "02 - Site Structure",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "## Site Structure",
+  "after": "## Site structure"
+ },
+ {
+  "id": "02-site-structure:S2",
+  "doc": "02 - Site Structure",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow; Vale `Pantheon.Headings`",
+  "before": "## Elements of the Site Structure",
+  "after": "## Elements of the site structure"
+ },
+ {
+  "id": "02-site-structure:S3",
+  "doc": "02 - Site Structure",
+  "category": "bold",
+  "rule": "Bold (\"Bold is used for navigational elements within a given interface\"); Italics",
+  "before": "***https://mysite.com*** ,",
+  "after": "https://mysite.com,"
+ },
+ {
+  "id": "02-site-structure:S4",
+  "doc": "02 - Site Structure",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "***https://mysite.com/news***",
+  "after": "https://mysite.com/news"
+ },
+ {
+  "id": "02-site-structure:S5",
+  "doc": "02 - Site Structure",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "***https://mysite.com/company/leadership/:name***  defines how",
+  "after": "https://mysite.com/company/leadership/:name defines how"
+ },
+ {
+  "id": "02-site-structure:S6",
+  "doc": "02 - Site Structure",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "***https://mysite.com/company/leadership/steve*** , the site manager",
+  "after": "https://mysite.com/company/leadership/steve, the site manager"
+ },
+ {
+  "id": "02-site-structure:S7",
+  "doc": "02 - Site Structure",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms\")",
+  "before": "In this case, when a visitor will hit *https://mysite.com/company/leadership/janedoe*, it is the regular page that will be delivered by P1.",
+  "after": "In this case, when a visitor requests *https://mysite.com/company/leadership/janedoe*, P1 delivers the regular page."
+ },
+ {
+  "id": "02-site-structure:S8",
+  "doc": "02 - Site Structure",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Pages are editable in P1 visual editor and their content is stored and managed in P1 CRR.",
+  "after": "You edit pages in the P1 visual editor, and P1 stores and manages their content in the CRR."
+ },
+ {
+  "id": "02-site-structure:S9",
+  "doc": "02 - Site Structure",
+  "category": "other",
+  "rule": "Voice, Style, and Flow",
+  "before": "The route is defined by the location in the site structure and their slug.",
+  "after": "The location in the site structure and the page slug define the route."
+ },
+ {
+  "id": "02-site-structure:S10",
+  "doc": "02 - Site Structure",
+  "category": "other",
+  "rule": "Voice, Style, and Flow",
+  "before": "A folder is simply defined by a name and a system name.",
+  "after": "A section has a name and a system name."
+ },
+ {
+  "id": "02-site-structure:S11",
+  "doc": "02 - Site Structure",
+  "category": "other",
+  "rule": "Voice, Style, and Flow",
+  "before": "Dynamic content elements are not shown on the site structure.",
+  "after": "The site structure doesn't show dynamic content elements."
+ },
+ {
+  "id": "03-page-metadata:S1",
+  "doc": "03 - Managing Page Metadata",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings` (enabled)",
+  "before": "# Managing Page Metadata",
+  "after": "# Managing page metadata"
+ },
+ {
+  "id": "03-page-metadata:S2",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "This guide is for P1 users who create, edit, review, or publish pages.",
+  "after": "This guide helps P1 users who create, edit, review, or publish pages."
+ },
+ {
+  "id": "03-page-metadata:S3",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The Metadata section is collapsed by default so that optional fields do not take space away from common page settings.",
+  "after": "The Metadata section stays collapsed by default so optional fields don’t take space away from common page settings."
+ },
+ {
+  "id": "03-page-metadata:S4",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"). Vale `Google.Will` also fires, but that rule is disabled (see O2).",
+  "before": "An empty field in the editor does not necessarily mean the published tag will be empty.",
+  "after": "An empty field in the editor doesn’t always produce an empty published tag."
+ },
+ {
+  "id": "03-page-metadata:S5",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Inherited values may not be visible as placeholders in the editor even though they resolve when the page renders.",
+  "after": "Inherited values may not show as placeholders in the editor even though they resolve when the page renders."
+ },
+ {
+  "id": "03-page-metadata:S6",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Suppose a page is titled Fall product launch, but its social preview should use a shorter, more promotional title.",
+  "after": "Suppose you title a page Fall product launch, but you want its social preview to use a shorter, more promotional title."
+ },
+ {
+  "id": "03-page-metadata:S7",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Confirm that you are working in the intended workstream.",
+  "after": "Confirm that you work in the intended workstream."
+ },
+ {
+  "id": "03-page-metadata:S8",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Make sure that the workstream containing the final metadata changes is the one being published.",
+  "after": "Publish the workstream that contains the final metadata changes."
+ },
+ {
+  "id": "03-page-metadata:S9",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Metadata values are part of the page state in a workstream.",
+  "after": "A workstream stores metadata values as part of the page state."
+ },
+ {
+  "id": "03-page-metadata:S10",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Tag-manager scripts are not included in this metadata interface.",
+  "after": "This metadata interface doesn’t include tag-manager scripts."
+ },
+ {
+  "id": "03-page-metadata:S11",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Schema.org JSON-LD is not included in this metadata interface.",
+  "after": "This metadata interface doesn’t include Schema.org JSON-LD."
+ },
+ {
+  "id": "03-page-metadata:S12",
+  "doc": "03 - Managing Page Metadata",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "If the tags are correct but the preview is outdated, use the platform’s refresh or re-scrape option.",
+  "after": "If the tags match the intended values but the preview shows older content, use the platform’s refresh or re-scrape option."
+ },
+ {
+  "id": "04-localize-content:S1",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "A locale is represented with a BCP 47 language tag, such as en-US, en-GB, es-ES, or fr-CA.",
+  "after": "P1 represents a locale with a BCP 47 language tag, such as en-US, en-GB, es-ES, or fr-CA."
+ },
+ {
+  "id": "04-localize-content:S2",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Internationalization (i18n) is the foundation that makes a site ready for multiple languages and markets.",
+  "after": "Internationalization (i18n) prepares a site for multiple languages and markets."
+ },
+ {
+  "id": "04-localize-content:S3",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Localization (l10n) is the work of adapting content for a specific locale or market.",
+  "after": "Localization (l10n) adapts content for a specific locale or market."
+ },
+ {
+  "id": "04-localize-content:S4",
+  "doc": "04 - Localize content in P1",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "giving localization team full freedom within the limit of the design system of the site.",
+  "after": "so the localization team can make changes within the site’s design system."
+ },
+ {
+  "id": "04-localize-content:S5",
+  "doc": "04 - Localize content in P1",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "P1 provides the internationalization framework as well as advanced workflow to let P1 users localize their site in numerous ways.",
+  "after": "P1 provides an internationalization framework and a workflow for localizing a site."
+ },
+ {
+  "id": "04-localize-content:S6",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "is configured by the site’s frontend and routing layer rather than by the content backend.",
+  "after": "depends on the site’s frontend and routing layer, not the content backend."
+ },
+ {
+  "id": "04-localize-content:S7",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Locale-native content is not treated as a translation and does not require a canonical page.",
+  "after": "P1 doesn’t treat locale-native content as a translation, and it doesn’t require a canonical page."
+ },
+ {
+  "id": "04-localize-content:S8",
+  "doc": "04 - Localize content in P1",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "A localized page can be a translation of a reference source page, or it can be locale-native content with no reference to a source.",
+  "after": "A localized page can translate a reference source page, or it can contain locale-native content with no reference to a source."
+ },
+ {
+  "id": "05-templates-content-types:S1",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "# Page Templates and Content Types",
+  "after": "# Page templates and content types"
+ },
+ {
+  "id": "05-templates-content-types:S2",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "## Page Templates",
+  "after": "## Page templates"
+ },
+ {
+  "id": "05-templates-content-types:S3",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "## Content Lifecycle and Versioning",
+  "after": "## Content lifecycle and versioning"
+ },
+ {
+  "id": "05-templates-content-types:S4",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings`",
+  "before": "## Content Types and Structured Content Management",
+  "after": "## Content types and structured content management"
+ },
+ {
+  "id": "05-templates-content-types:S5",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Building a template is identical to building a page",
+  "after": "Building a template works the same way as building a page"
+ },
+ {
+  "id": "05-templates-content-types:S6",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Locked blocks cannot be modified by editors without permission",
+  "after": "Editors cannot modify locked blocks without permission"
+ },
+ {
+  "id": "05-templates-content-types:S7",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "a configured external data source (to be declared by developers in the site codebase)",
+  "after": "a configured external data source that developers declare in the site codebase"
+ },
+ {
+  "id": "05-templates-content-types:S8",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "define a limited number of items to be displayed",
+  "after": "limit the number of items displayed"
+ },
+ {
+  "id": "05-templates-content-types:S9",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Page Templates can be used to define Content Types with specific layout and structure driven by the template document.",
+  "after": "You can use page templates to define content types with specific layout and structure driven by the template document."
+ },
+ {
+  "id": "05-templates-content-types:S10",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "P1 repository can be queried from API, MCP or the List component to build automated navigation for the structured content built with page templates.",
+  "after": "You can query the P1 repository through the API, MCP, or the List component to build automated navigation for structured content built with page templates."
+ },
+ {
+  "id": "05-templates-content-types:S11",
+  "doc": "05 - Page Templates and Content Types",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\"; \"avoid colloquialisms and hyperbole\")",
+  "before": "This is ideal for organizations that maintain a separate database or API for their primary content assets",
+  "after": "This works for organizations that maintain a separate database or API for their primary content assets"
+ },
+ {
+  "id": "06-query-view-system:S1",
+  "doc": "06 - P1 Query and View System",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "an existing datasource or any API really)",
+  "after": "an existing data source, or another API)"
+ },
+ {
+  "id": "06-query-view-system:S2",
+  "doc": "06 - P1 Query and View System",
+  "category": "hyper",
+  "rule": "Voice, Style, and Flow (\"avoid colloquialisms and hyperbole\")",
+  "before": "any coding agent can simply use them to let your developer quickly create new data sources.",
+  "after": "you or your coding agent can use them to create new data sources."
+ },
+ {
+  "id": "06-query-view-system:S3",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The view system can be used to create content grids, listings, search features, or other navigational elements.",
+  "after": "Use the view system to create content grids, listings, search features, or other navigational elements."
+ },
+ {
+  "id": "06-query-view-system:S4",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Data sources can be of different types:",
+  "after": "Data sources come in these types:"
+ },
+ {
+  "id": "06-query-view-system:S5",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "as long as the API can be queried and can deliver content in a structured way using JSON.",
+  "after": "as long as you can query the API and it delivers structured content as JSON."
+ },
+ {
+  "id": "06-query-view-system:S6",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "the only configuration required is to configure collection ID and token.",
+  "after": "you only need to set the collection ID and token."
+ },
+ {
+  "id": "06-query-view-system:S7",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Once data sources are created and activated, P1 is ready to pull content from these data sources and render it on templated pages.",
+  "after": "After you create and activate data sources, P1 pulls content from them and renders it on templated pages."
+ },
+ {
+  "id": "06-query-view-system:S8",
+  "doc": "06 - P1 Query and View System",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "P1 automatically creates a data source when a page template is created and this data source can be used to query and view all content of that type.",
+  "after": "P1 automatically creates a data source when you create a page template. Use it to query and view all content of that type."
+ },
+ {
+  "id": "07-page-redirects:S1",
+  "doc": "07 - P1 Page Redirects",
+  "category": "other",
+  "rule": "Headings (\"Give heading levels a meaningful hierarchy\")",
+  "before": "#### When the page slug changes",
+  "after": "### When the page slug changes"
+ },
+ {
+  "id": "07-page-redirects:S2",
+  "doc": "07 - P1 Page Redirects",
+  "category": "other",
+  "rule": "Headings",
+  "before": "#### When the page parent’s URL changes",
+  "after": "### When the page parent’s URL changes"
+ },
+ {
+  "id": "07-page-redirects:S3",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "When editors or agents are updating content, they can change content and metadata but also slugs.",
+  "after": "When editors or agents update content, they can change content, metadata, and slugs."
+ },
+ {
+  "id": "07-page-redirects:S4",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The slug change might be on purpose or not.",
+  "after": "A slug change can be intentional or accidental."
+ },
+ {
+  "id": "07-page-redirects:S5",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "When a slug is changed, P1 asks the user making the change",
+  "after": "When someone changes a slug, P1 asks the user making the change"
+ },
+ {
+  "id": "07-page-redirects:S6",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "and the “news” section is updated and renamed the “articles” section, all URLs under /news/\\* are redirected to /articles/\\*.",
+  "after": "and you rename the “news” section to “articles”, P1 redirects all URLs under /news/\\* to /articles/\\*."
+ },
+ {
+  "id": "07-page-redirects:S7",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Existing redirects within a site can be viewed from the \"Redirects\" tab under the \"Site structure\" section.",
+  "after": "You can view existing redirects within a site from the **Redirects** tab under **Site structure**."
+ },
+ {
+  "id": "07-page-redirects:S8",
+  "doc": "07 - P1 Page Redirects",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "It’s not possible to create two redirects on the same origin.",
+  "after": "You can't create two redirects on the same origin."
+ },
+ {
+  "id": "07-page-redirects:S9",
+  "doc": "07 - P1 Page Redirects",
+  "category": "bold",
+  "rule": "Bold (\"Bold is used for navigational elements within a given interface\")",
+  "before": "the \"Redirects\" tab",
+  "after": "the **Redirects** tab"
+ },
+ {
+  "id": "07-page-redirects:S10",
+  "doc": "07 - P1 Page Redirects",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "under the \"Site structure\" section",
+  "after": "under the **Site structure** section"
+ },
+ {
+  "id": "07-page-redirects:S11",
+  "doc": "07 - P1 Page Redirects",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "by clicking \"Redirects\"",
+  "after": "by clicking **Redirects**"
+ },
+ {
+  "id": "07-page-redirects:S12",
+  "doc": "07 - P1 Page Redirects",
+  "category": "bold",
+  "rule": "Bold",
+  "before": "from within the Site structure section",
+  "after": "from within the **Site structure** section"
+ },
+ {
+  "id": "08-component-library-user:S1",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings` (enabled)",
+  "before": "# P1 Component Library",
+  "after": "# P1 component library"
+ },
+ {
+  "id": "08-component-library-user:S2",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\"); Vale `Pantheon.Headings` (enabled)",
+  "before": "## Using blocks in the Visual Editor",
+  "after": "## Using blocks in the visual editor"
+ },
+ {
+  "id": "08-component-library-user:S3",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "heading",
+  "rule": "Voice, Style, and Flow (\"Use sentence case for all headings\")",
+  "before": "Adding a Block to a Page",
+  "after": "Adding a block to a page"
+ },
+ {
+  "id": "08-component-library-user:S4",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "They are offering a starting point for site builders without having to build all components from scratch.",
+  "after": "They give site builders a starting point, so they don't have to build every component from scratch."
+ },
+ {
+  "id": "08-component-library-user:S5",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "blocks that can be added to any page in the visual editor",
+  "after": "blocks you can add to any page in the visual editor"
+ },
+ {
+  "id": "08-component-library-user:S6",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Blocks can be undone with Cmd+Z immediately after removal.",
+  "after": "To undo a removal, press Cmd+Z immediately after you remove the block."
+ },
+ {
+  "id": "08-component-library-user:S7",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Fields you do not see cannot be changed from the editor",
+  "after": "You can't change fields you don't see in the editor"
+ },
+ {
+  "id": "08-component-library-user:S8",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Typically, colors, fonts, or spacing are governed by the design system and you can not set them manually.",
+  "after": "Typically, the design system controls colors, fonts, and spacing, so you can't set them manually."
+ },
+ {
+  "id": "08-component-library-user:S9",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Pages that already contain the block are not affected.",
+  "after": "Pages that already contain the block stay the same."
+ },
+ {
+  "id": "08-component-library-user:S10",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The block may require a required field that was left empty.",
+  "after": "The block may have a required field you left empty."
+ },
+ {
+  "id": "08-component-library-user:S11",
+  "doc": "08 - (User) P1 Component Library",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Changes on the main branch may be restricted depending on your organization's workflow settings.",
+  "after": "Your organization's workflow settings may restrict changes on the main branch."
+ },
+ {
+  "id": "09-site-export-import:S1",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "## What is included",
+  "after": "## What the bundle includes"
+ },
+ {
+  "id": "09-site-export-import:S2",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Vale `Pantheon.Headings` (enabled), confirmed: \"NOT\" is all caps. Also Voice, Style, and Flow (\"Use sentence case for all headings\", \"Avoid be verbs\")",
+  "before": "## What is NOT included",
+  "after": "## What the bundle excludes"
+ },
+ {
+  "id": "09-site-export-import:S3",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "heading",
+  "rule": "Vale `Pantheon.Headings` (enabled), confirmed; Voice, Style, and Flow (\"Use sentence case for all headings\"). The command is `curl`, lowercase.",
+  "before": "## Complete Curl example",
+  "after": "## Complete curl example"
+ },
+ {
+  "id": "09-site-export-import:S4",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "beforebegin",
+  "rule": "Before You Begin Sections (the guide's section name is \"Before you begin\")",
+  "before": "## Prerequisites",
+  "after": "## Before you begin"
+ },
+ {
+  "id": "09-site-export-import:S5",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Bundles are portable ZIP files containing all site content — branches, documents, version history, and publish state.",
+  "after": "A bundle packages all site content, including branches, documents, version history, and publish state, in a portable ZIP file."
+ },
+ {
+  "id": "09-site-export-import:S6",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Users list (informational — must be configured manually on target)",
+  "after": "Users list (informational only; configure users manually on the target)"
+ },
+ {
+  "id": "09-site-export-import:S7",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Site API tokens — must be regenerated on the target",
+  "after": "Site API tokens — regenerate them on the target"
+ },
+ {
+  "id": "09-site-export-import:S8",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Allowed origins — must be configured on the target",
+  "after": "Allowed origins — configure them on the target"
+ },
+ {
+  "id": "09-site-export-import:S9",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Store the returned token value — it is only shown once",
+  "after": "Store the returned token value — the API shows it only once"
+ },
+ {
+  "id": "09-site-export-import:S10",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "Already-completed phases are skipped automatically.",
+  "after": "The import skips completed phases automatically."
+ },
+ {
+  "id": "09-site-export-import:S11",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "The target site does not need to be empty for a resume — only for a first-time import.",
+  "after": "A resume doesn't require an empty target site; only a first-time import does."
+ },
+ {
+  "id": "09-site-export-import:S12",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "be",
+  "rule": "Voice, Style, and Flow (\"Avoid be verbs\")",
+  "before": "if either the bundle files or bundle.json itself are modified after export, the import will reject the bundle with a 422 Signature verification failed error.",
+  "after": "if you modify either the bundle files or bundle.json after export, the import rejects the bundle with a 422 Signature verification failed error."
+ },
+ {
+  "id": "09-site-export-import:S13",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "code",
+  "rule": "Code Samples (inline code \"Used for file names, variables, commands, and output, inline within paragraphs\")",
+  "before": "Users and agent roles — see requiresSetup in the import response",
+  "after": "Users and agent roles — see `requiresSetup` in the import response"
+ },
+ {
+  "id": "09-site-export-import:S14",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "code",
+  "rule": "Code Samples (inline code)",
+  "before": "Download the ZIP from downloadUrl and save the bundleSignature — you will need it for the import step.",
+  "after": "Download the ZIP from `downloadUrl` and save the `bundleSignature` — you need it for the import step."
+ },
+ {
+  "id": "09-site-export-import:S15",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "code",
+  "rule": "Code Samples (inline code)",
+  "before": "All documents (excluding \\_registry/ which rebuilds automatically)",
+  "after": "All documents (excluding `_registry/`, which rebuilds automatically)"
+ },
+ {
+  "id": "09-site-export-import:S16",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "code",
+  "rule": "Code Samples (inline code)",
+  "before": "The bundle contains a SHA-256 manifest (bundle.json) covering every file.",
+  "after": "The bundle contains a SHA-256 manifest (`bundle.json`) covering every file."
+ },
+ {
+  "id": "09-site-export-import:S17",
+  "doc": "09 - P1 Site Export & Import",
+  "category": "code",
+  "rule": "Code Samples (inline code)",
+  "before": "The requiresSetup.collaborators field lists every user and agent that had a role on the source site.",
+  "after": "The `requiresSetup.collaborators` field lists every user and agent that had a role on the source site."
+ }
+]
