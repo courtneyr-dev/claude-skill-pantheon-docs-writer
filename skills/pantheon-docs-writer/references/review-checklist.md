@@ -1,11 +1,34 @@
 # Review checklist
 
-> Run before delivering or committing any doc.
+> Run before delivering any doc, and use it as the rubric for a read-only review. Automated checks and semantic review are separate passes: a clean lint run says nothing about whether the page is right.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 9: Review Checklist
+## Review checklist
 
-Before delivering or committing any doc:
+### Severity
+
+Classify each finding by what it does to the reader. Report blocking items first.
+
+| Level | Meaning | Examples |
+|---|---|---|
+| **Blocking** | The reader fails, loses data, or gets a wrong fact, or the repo check fails. | Wrong default, limit, version, or permission; missing destructive-step warning; Vale error; broken anchor; unregistered component; midnight `published_at` |
+| **Warning** | The reader slows down or misreads, or a rule is broken without harm. | No starting point; no success check; title-case heading; be verb that hides the actor; vague link text |
+| **Suggestion** | Preference or polish. | Tone, ordering, optional `Google.*` rules switched off in the repo |
+
+### Semantic review (read the page as the reader)
+
+- [ ] Starting point: step 1 says where the reader is (dashboard, tab, terminal) and which account or role they need
+- [ ] Prerequisites sit in "Before you begin" and the page assumes nothing beyond them
+- [ ] Expected result: the reader can tell each stage and the whole task worked, with something they can see or type
+- [ ] Permissions and plan or CMS limits are stated, with a source
+- [ ] Destructive or irreversible steps say so before the step, with the recovery path
+- [ ] Known failures name the cause and the fix
+- [ ] Every product claim traces to a source in the claim record, or sits in Open questions (`inputs-claims-and-sources.md`)
+- [ ] Protected content (commands, output, UI labels, error text, URLs) matches the product, not a style rule
+
+### Checklist
+
+Before delivering any doc:
 
 **Structure**
 - [ ] Diátaxis quadrant identified and content serves only that quadrant
@@ -16,8 +39,9 @@ Before delivering or committing any doc:
 - [ ] "More resources" section at the end
 
 **Release notes only**
-- [ ] Filename follows `YYYY-MM-DD-slug.md` and slug will produce the correct URL
-- [ ] `published_at` set to an accurate ISO timestamp
+- [ ] Filename follows `YYYY-MM-DD-slug.md` and slug will produce the correct URL (the filename alone sets it)
+- [ ] `published_at` is the real publish time, not `T00:00:00Z`; filename date, `published_date`, and `published_at` are consistent, or the difference is reported
+- [ ] New announcement or correction: a correction keeps the original dates
 - [ ] `description` present and written as a complete sentence
 - [ ] Headings use sentence case (not title case)
 - [ ] `action-required` category added if customer action is needed
@@ -53,7 +77,7 @@ Before delivering or committing any doc:
 - [ ] No trailing spaces
 - [ ] Blank line at end of file
 - [ ] Blank lines between YAML frontmatter and content, and between headings and content
-- [ ] Redirect table in PR if moving or removing any URLs
+- [ ] Redirect table in the handoff notes if the change moves or removes a URL (proposed unless authorized)
 
 **Voice and claims** (see `voice-rules.md` and `inputs-claims-and-sources.md`)
 - [ ] Searched the draft for be verbs (is, are, was, were, be, been, being) and fixed each one that hides an actor
@@ -69,6 +93,7 @@ Before delivering or committing any doc:
 - [ ] Page links to its parent, related pages, and the next step
 - [ ] Errors appear verbatim as H3s in a Troubleshooting section
 
-**Automated checks**
-- [ ] Ran `vale` on the file and fixed errors and warnings (`vale-and-checks.md`)
+**Automated checks** (`vale-and-checks.md`)
+- [ ] Each gate check is marked passed, failed, unavailable, or not applicable, and none is marked passed unless it ran
+- [ ] Errors fixed; warnings fixed or explained
 

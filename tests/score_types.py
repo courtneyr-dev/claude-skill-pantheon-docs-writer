@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Score the Diataxis type fixtures.
+"""Score the Diátaxis type fixtures.
 
   python3 tests/score_types.py classify answers.json
       answers.json maps a fixture id to the model's one-word answer:

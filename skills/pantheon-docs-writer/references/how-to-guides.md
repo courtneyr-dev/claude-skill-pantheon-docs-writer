@@ -14,7 +14,8 @@ A how-to guide gets a competent reader from a stated starting point to a stated 
 - Assume skill, not setup. Don't teach concepts; link to an explanation.
 - Cover the real task, including the branch a working reader hits ("If the site uses Drupal, ...") only when it's common. Otherwise write a second guide.
 - Add Troubleshooting for known failure modes, with error text verbatim as the heading.
-- Show a verification step so the reader knows the task worked.
+- Show a verification step so the reader knows the task worked. Say where the reader opens the result (a public URL, a dashboard, a terminal), and list the exact values to check.
+- Write each step so it works without a screenshot. A screenshot supports a step; it doesn't carry one. A capture that needs a live change (merge, publish, delete) needs the user's go-ahead before you take it.
 
 ## Don't
 

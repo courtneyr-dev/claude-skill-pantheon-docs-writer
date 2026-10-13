@@ -3,7 +3,7 @@
 > Use when drafting or editing prose: voice, headings, emphasis, code formatting, links, lists, tables, images, and where-the-user-is orientation.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 5: Writing Style
+## Writing style
 
 ### Voice and Person (Pantheon + Google)
 

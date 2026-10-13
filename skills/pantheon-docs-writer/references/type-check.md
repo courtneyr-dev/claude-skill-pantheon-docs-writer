@@ -24,9 +24,18 @@ Read the page section by section and classify each section. A page is mixed when
 - A reference table with a numbered setup procedure above it (reference plus how-to).
 - An overview that describes the architecture, then lists steps (explanation plus how-to).
 
+Separate supporting context from a competing goal before you call a page mixed:
+
+- **Supporting context** is a clause or a short paragraph that helps the reader finish the task or use the fact ("the clone copies the database and files, so Live content overwrites Dev"). It stays.
+- **A competing goal** is a section a reader could want alone: a multi-paragraph "why", a full option table, a second procedure for a different reader. That makes the page mixed.
+
 Don't force a type onto a mixed page, and don't score a page by its title. Introductions and "Overview" pages often serve one need in the first paragraph and another by the end.
 
 ## Split a mixed page
+
+**Propose, don't split.** Diagnose and report what you found: the quadrant each section serves, and which sections compete. Move content, create pages, or change URLs only when the user asked for that restructuring. During a narrow edit (case, voice, wording), leave the structure as it is and mention the mixed content in one sentence at most (not at all in return-only mode). A split changes navigation and URLs, so it's an information-architecture change.
+
+When a split is authorized:
 
 1. Name each quadrant the page serves and list which sections belong to each.
 2. Keep the quadrant the page's title promises. Move the rest to its own page.

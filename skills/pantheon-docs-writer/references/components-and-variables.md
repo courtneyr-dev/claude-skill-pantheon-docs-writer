@@ -3,7 +3,9 @@
 > Use when a page needs callouts, accordions, tabs, partials, popovers, product cards, definitions, or the variables pattern.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 6: MDX Components
+## MDX components
+
+The components a page can use are registered in `src/components/ui/mdx-wrapper/default-components.tsx` (main@9b15056): Callout, Alert, Accordion, BuildTools, BuildToolsChangelog, DrushChangelog, DnsProviderDocs, Download, Icon, Releases, TerminusVersion, Commands, ReviewDate, Check, Product, ProductGroup, YouTube, Wistia, Card, CardGroup, TabList (it handles its child `Tab`), Example, Popover, Enablement, and Partial. This file shows the ones writers use most. No build-time check for an unregistered tag turned up. Check every tag you write against the registry instead of relying on a build error.
 
 ### Callouts / Alerts
 
@@ -106,7 +108,7 @@ Use `<dfn>` for new terms — they're indexed to the Glossary automatically:
 <dfn id="unique-slug">Term</dfn>
 ```
 
-## Step 7: Variables Pattern
+## Variables pattern
 
 When a guide requires the reader to substitute values (site names, env names, etc.), define them upfront with an export callout in "Before you begin":
 

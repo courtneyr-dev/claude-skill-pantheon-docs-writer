@@ -31,8 +31,11 @@ Mark these `unverified` and ask the Content Publisher team:
 - Keep the same voice, heading-case, emphasis, and "Before you begin" rules. See `writing-style.md`, `voice-rules.md`, and `document-structure.md`.
 - Bold only for UI navigation. Emphasize with italics.
 - **Flag code for the author.** Mark every file name, field, command, and variable that needs inline code, so the author can apply the Content Publisher control. Do this as a list at the end ("Apply inline code to: ...") because pasted backticks won't render.
-- Give every image alt text and every link descriptive text. The quality assistant checks both.
-- Put the inputs, claims, and open questions from `inputs-claims-and-sources.md` at the end of your answer, outside the draft.
+- Give every image alt text and every link descriptive text. The quality assistant checks both. Deliver alt text as a list after the draft ("Apply alt text to: ...") with the inline-code list, not as "Alt text:" lines in the page.
+- **Don't link to a heading on a Doc-published page.** Content Publisher pages use Google-generated heading ids (observed 2026-10-13 on docs.p1.pantheon.io: `#h.fyrcgxgqey8y`), not slugs from the heading text, and the link doesn't scroll to the section. Name the section in the sentence ("follow the *Verify published metadata* steps in [Managing page metadata](...)") and link the page. Treat an anchor you built from heading text as `unverified`.
+- **Resolve placeholder links** (`(#)`) from the published site's `sitemap.xml`, and fetch each URL to confirm it loads. Use full URLs; relative paths in a Doc are unconfirmed. Without access, leave the placeholder and ask.
+- Put the inputs, claims, and open questions from `inputs-claims-and-sources.md` at the end of your answer, outside the draft, separated from it so nobody pastes them into the Doc.
+- Don't use `---` frontmatter, MDX tags, or repo paths in a Doc draft. A horizontal rule between the draft and your notes is fine, but label the notes "not part of the page".
 
 ## How to review a Doc
 
@@ -42,6 +45,8 @@ Mark these `unverified` and ask the Content Publisher team:
 - Leave claims you can't confirm as comments. Don't rewrite them.
 
 ## Check a Doc before publishing
+
+Publishing a Doc through Content Publisher is an outward-facing action: prepare the text, and publish only when the user asks you to. If you can't export the Doc or run `vale` here, mark that check unavailable and give the text for the author to run.
 
 1. Export the Doc as text.
 2. Remove Content Publisher markers (the `[█ ](...)` links) and unescape Markdown escapes the export adds.

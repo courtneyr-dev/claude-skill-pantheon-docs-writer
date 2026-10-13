@@ -1,11 +1,13 @@
 # Navigation and redirects
 
-> Use when adding a page to the site navigation, or when moving, renaming, or deleting a URL.
+> Use when adding a page to the site navigation, or when moving, renaming, or deleting a URL. Checked against `pantheon-systems/documentation` main@9b15056.
+>
+> **Propose, don't apply.** Navigation and redirect changes move readers' URLs and menus. Describe the change and give the coverage table; edit `src/components/omni-components/` or `src/middleware.ts` only when the user asked for that change. A prose edit or a page review never includes one.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 11: Adding Pages to Navigation
+## Adding pages to navigation
 
-Site navigation is defined in `src/components/omni-components/`. Each section of the nav has its own TypeScript file. Navigation is not driven by frontmatter — you must explicitly add new pages to the appropriate omni-component file.
+Site navigation is defined in `src/components/omni-components/`. Each section of the nav has its own TypeScript file. Navigation is not driven by frontmatter — you must explicitly add new pages to the appropriate omni-component file. `index.ts` assembles the sections and adds Docs Home and an external Content Publisher link; `helpers.ts` holds `simpleLink` and `getGuideDirectory`.
 
 ### Finding the right nav section
 
@@ -19,6 +21,8 @@ Site navigation is defined in `src/components/omni-components/`. Each section of
 | `terminus.ts` | Terminus |
 | `security.ts` | Security |
 | `support.ts` | Support |
+| `learning.ts` | Learning |
+| `about.ts` | About |
 
 ### Adding a simple link
 
@@ -47,7 +51,7 @@ simpleLink("/parent-path", "Parent Title", [
 ]),
 ```
 
-## Step 12: Creating Redirects
+## Creating redirects
 
 Redirects are required whenever:
 - A doc or guide is moved to a new URL
@@ -71,11 +75,11 @@ Rules:
 - All redirects are 301 permanent
 - Add a separate entry for every old URL, including guide sub-pages — not just the parent
 
+No test or script validates `RedirectMap`, so check each old path against the file by hand, and check that the new path resolves to a page.
+
 ### In your PR
 
-When a PR contains redirects:
-- Add the **Redirect** label to the PR
-- Include a summary table in the PR body so reviewers can verify coverage:
+When a PR contains redirects, include a summary table in the PR body so reviewers can verify coverage:
 
 ```markdown
 | From | To |
@@ -83,3 +87,5 @@ When a PR contains redirects:
 | `/old-path` | `/new-path` |
 | `/old-path/sub-page` | `/new-path/sub-page` |
 ```
+
+A **Redirect** label on redirect PRs is unconfirmed: nothing in `.github/`, `CONTRIBUTING.md`, or the workflows of main@9b15056 mentions it (a label can still exist in GitHub). Ask the docs team before you tell anyone to add it.

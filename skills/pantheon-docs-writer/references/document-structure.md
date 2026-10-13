@@ -3,7 +3,7 @@
 > Use when laying out a page: intro, Before you begin, content sections, Troubleshooting, More resources.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 4: Document Structure
+## Document structure
 
 ### Standard section order
 

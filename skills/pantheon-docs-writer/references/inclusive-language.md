@@ -3,7 +3,7 @@
 > Apply on every page. The canonical source is the docs site's `/inclusive-language` page.
 > Part of the `pantheon-docs-writer` skill. Return to `../SKILL.md` for the workflow.
 
-## Step 8: Inclusive Language
+## Inclusive language
 
 Apply these rules throughout. Refer to `/inclusive-language` for full guidance.
 
