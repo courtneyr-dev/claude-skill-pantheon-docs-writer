@@ -32,6 +32,7 @@ When editing `skills/pantheon-docs-writer/SKILL.md`:
 - Navigation is driven by `src/components/omni-components/` TypeScript files, not frontmatter or YAML config
 - Redirects are managed in `src/middleware.ts` in the `RedirectMap` object
 - Release notes live in `src/source/releasenotes/` with their own frontmatter schema separate from regular docs
+- Lessons from a doc review land in `references/docs-mode.md` (review, shared-Doc, glossary rules) or `references/inputs-claims-and-sources.md` (claims and terminology). Check a reply-format rule against a real posted reply before you add it, and open a PR; don't change the skill outside one.
 - The `innav` frontmatter field is declared in the type system but not actively consumed — do not present it as a navigation driver
 
 When editing `README.md`:
