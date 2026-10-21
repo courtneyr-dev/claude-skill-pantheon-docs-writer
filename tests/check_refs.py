@@ -17,7 +17,7 @@ for f in files:
             continue
         cands = [f.parent / name, base / name, base / "references" / name]
         if name.endswith(".md") and "/" not in name and not any(c.exists() for c in cands):
-            if re.fullmatch(r"\d{4}-\d\d-\d\d-.+\.md", name) or name in ("limits.md",):
+            if re.fullmatch(r"\d{4}-\d\d-\d\d-.+\.md", name) or name in ("limits.md", "walkthrough-checklist.md", "decisions.md"):
                 continue
             errors.append(f"{f.name}: missing {name}")
         elif "/" in name and not any(c.exists() for c in cands):

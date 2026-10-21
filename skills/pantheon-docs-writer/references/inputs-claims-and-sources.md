@@ -50,6 +50,20 @@ Example row (made-up values, shown only for the format):
 - Use the markers from the table above. Don't add new ones.
 - A claim whose marker is `inferred` or `unverified` doesn't go in the page as fact. It goes to Open questions with the sentence it blocks.
 
+## Runtime claims stay `inferred` until someone runs them
+
+A claim about what an editor or product does at runtime, read from source or docs, is `inferred` even when the source is clear. Tests that assert strings in SDK source don't change that. Only a run in the real product moves it to `reproduced`. A draft is ready for human review when no runtime claim carries `inferred` or `unverified`. In the 2026-10-21 run, "a new tab starts on Live" passed a panel and 43 tests, and failed the editor walkthrough. The checklist and the order of steps are in `docs-batch-workflow.md`.
+
+## Write one decisions file per batch
+
+When several docs share open questions, write `decisions.md` once for the batch, not a list per doc.
+
+- Number each question and phrase it so one word answers it. Example: "Title word: block, or component?" Answer: "block".
+- Route each question to a named role (docs lead, docs-site owner, SDK owner, support).
+- Each doc cites the answer by number. Answer once; don't re-ask per doc.
+- Batch examples (2026-10-21): "block" versus "component" in titles, "template path" versus "route", and where images live.
+- Record an answer only after the role confirms it; until then write "recommend" (see `docs-mode.md`).
+
 ## Check these claims hardest
 
 A wrong default, limit, version, availability note, permission, or required action sends readers to a failed or destructive result. Before you state one, find an `observed`, `reproduced`, or named `reported` source for it:
