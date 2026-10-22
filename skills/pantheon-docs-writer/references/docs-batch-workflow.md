@@ -10,7 +10,7 @@ A claim about runtime or editor behavior that you read from source or docs stays
 Evidence from the run:
 
 - The draft said "a new tab starts on Live". A three-lens panel and 43 passing tests let it through. The tests assert strings in SDK source, so they can't see runtime behavior.
-- The walkthrough ran 12 checks. 11 passed. Check 8 failed: a new tab opened on the workstream named by the project's `.env`, not on Live.
+- The walkthrough had 12 checks. 10 passed (one of them, a reload keeping the workstream, wasn't conclusive), 1 failed and 1 wasn't run. Check 8 failed: a new tab opened on `Bureau site build`, not on Live. The project's `.env` sets `NEXT_PUBLIC_CSS_BRANCH_ID` to that workstream, but nobody removed the variable to confirm it's the cause.
 - The same walkthrough settled an open question (a block that no category lists appears under **Other**) and showed the category label displays in capitals.
 - Across the three pilot docs, 29 `it.todo` editor steps (9, 6, and 14) were unrun. Each was its doc's top risk.
 
