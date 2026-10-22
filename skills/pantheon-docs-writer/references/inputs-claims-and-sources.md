@@ -10,9 +10,27 @@ Ask for any you don't have. Don't fill a gap with plausible text.
 1. **Reader and goal:** who reads the page and what they can do afterward.
 2. **Starting point:** the exact place the reader begins (which dashboard, which tab, which tool). Open every procedure there ("Where's the User?").
 3. **Prerequisites:** what the reader needs or already knows. They go in "Before you begin". Assume nothing beyond that section.
-4. **Sources:** where each product claim comes from: a spec, a person, or the product itself.
+4. **Sources:** where each product claim comes from: the `p1-platform` source first (next section), then a spec, a person, or the product itself.
 5. **Product terms:** the exact names in the UI, and any term the team hasn't settled.
 6. **Content type:** the Diátaxis quadrant (see `../SKILL.md`).
+
+## Read the P1 source first
+
+For a claim about what P1 does, read `pantheon-systems/p1-platform` (internal, default branch `main`) before a built package, a Jira ticket, a Google Doc, or a Slack thread. It holds the code the product runs. Clone it shallow once (`gh repo clone pantheon-systems/p1-platform ~/Developer/p1-platform -- --depth 1`), pull before each batch, and record the commit (`git -C ~/Developer/p1-platform log -1 --format=%h`).
+
+| Claim about | Read |
+|---|---|
+| Editor behavior: registration, workstream selection, merge review | `packages/puck-css/src/editor/`, `packages/puck-css/src/merge/` |
+| Backend behavior: merges, documents, checkpoints, MCP | `workers/ccr/src/`, `docs/ccr/` |
+| Media library | `workers/p1-media/src/`, `packages/p1-media-r2/src/`, `docs/p1-media/` |
+| Starter and scaffolder | `apps/p1-starter/`, `packages/create-p1-starter-kit/` |
+| Versions and releases | `packages/*/CHANGELOG.md`, `docs/releasing.md` |
+
+The compiled `dist/` in `node_modules` shows one installed version with its comments stripped. Use it to check a named version, not to learn intent. A design doc or progress note states intent: confirm it against the code before you mark a claim `observed`. The repo is internal, so describe behavior on the page and don't paste its code.
+
+A claim read from source at a named commit is `observed` for what the code does. What a reader sees in the editor stays `inferred` until someone runs it (see "Runtime claims stay `inferred`").
+
+Evidence, 2026-10-21: a draft said the merge screens leave out page templates because they share the `_registry/` prefix. `workers/ccr/src/services/merge-execution-service.ts` merges `_registry/templates/` and excludes only the other `_registry/` paths. A draft also listed the starting workstream in the wrong order. `P1PuckProvider.tsx` picks the address, then the tab's stored workstream, then the build-time default, then `main`. The compiled package showed neither.
 
 ## What counts as a claim
 
@@ -49,6 +67,20 @@ Example row (made-up values, shown only for the format):
 - Give a location a reviewer can open: file and line, URL and heading, Slack thread date, screenshot file name. "The source" isn't a location.
 - Use the markers from the table above. Don't add new ones.
 - A claim whose marker is `inferred` or `unverified` doesn't go in the page as fact. It goes to Open questions with the sentence it blocks.
+
+## Runtime claims stay `inferred` until someone runs them
+
+A claim about what an editor or product does at runtime, read from source or docs, is `inferred` even when the source is clear. Tests that assert strings in SDK source don't change that. Only a run in the real product moves it to `reproduced`. A draft is ready for human review when no runtime claim carries `inferred` or `unverified`. In the 2026-10-21 run, "a new tab starts on Live" passed a panel and 43 tests, and failed the editor walkthrough. The checklist and the order of steps are in `docs-batch-workflow.md`.
+
+## Write one decisions file per batch
+
+When several docs share open questions, write `decisions.md` once for the batch, not a list per doc.
+
+- Number each question and phrase it so one word answers it. Example: "Title word: block, or component?" Answer: "block".
+- Route each question to a named role (docs lead, docs-site owner, SDK owner, support).
+- Each doc cites the answer by number. Answer once; don't re-ask per doc.
+- Batch examples (2026-10-21): "block" versus "component" in titles, "template path" versus "route", and where images live.
+- Record an answer only after the role confirms it; until then write "recommend" (see `docs-mode.md`).
 
 ## Check these claims hardest
 

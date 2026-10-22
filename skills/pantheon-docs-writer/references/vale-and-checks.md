@@ -65,3 +65,11 @@ Rules for the gate:
 - When you changed repo files, validate from a clean checkout that contains the change, so a stray local file can't make a check pass. Use a scratch copy or an exported copy, and leave the user's working tree as it was. If a clean run needs something you don't have (`node_modules`, network, a Vale package), report the check as unavailable with the missing dependency. For a one-paragraph edit, running `vale` on the file is enough.
 - Don't weaken the lint configuration, add broad ignores, or edit a product name or error message to make a check pass. When you're editing (not reviewing), fix a pre-existing error in a file you were asked to edit. Report failures in other files separately.
 - Vale passing says nothing about product correctness. Run the semantic review in `review-checklist.md` as a separate pass.
+
+## Gate order and Vale setup
+
+Order the gate cheapest first: deterministic checks (Vale with the shared config, structure and code tests, link check, image checks, claim-marker counts), then the editor walkthrough, then one reviewer pass, then the ticket status update. See `docs-batch-workflow.md` for the last three.
+
+- **Vale must fail the run when its config is missing.** A wrapper that skips Vale because `.vale.ini` isn't found and exits 0 is a defect: the gate reports "passed" for a check that didn't run. Make the wrapper exit non-zero and print which config path it looked for. Report the check as unavailable, never passed.
+- **Put bolded UI labels in a Vale vocabulary file, not in per-test exemptions.** Labels such as Notice, Other, and My blocks belong in the vocabulary's accept list (`.vale/styles/config/vocabularies/<name>/accept.txt`, selected by `Vocab =` in `.vale.ini`). As of 2026-10-21 one Vale heading warning on "Notice appears under Other" was exempted inside one test instead. A vocabulary entry covers every doc that bolds the label; the test exemption covers one.
+- Count the markers before you call a draft ready: `grep -cE 'inferred|unverified' <notes file>` on the runtime-claim rows should return 0.
